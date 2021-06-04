@@ -11,7 +11,7 @@
   justify-content: center;
   place-items: center;
   height: 9em;
-  border-bottom: 2px solid #383b41;
+  border-bottom: 1px solid #383b41;
   padding-bottom: 0.5em;
   margin: 0 1em;
 }
@@ -27,7 +27,7 @@
   padding: 0.5em 1em;
   border-radius: 3px;
   color: #adbac7;
-  border: 2px solid #6e7681;
+  border: 1px solid #6e7681;
   transition-duration: 0.3s;
 }
 
