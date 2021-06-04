@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import AppBar from "../components/AppBar";
 import Footer from "../components/Footer";
+import HomeIntro from "../components/HomeIntro";
 
 const name = "Allwell Onen";
 export const siteTitle = name;
@@ -22,6 +23,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <AppBar />
+      <HomeIntro />
       <Footer />
     </div>
   );

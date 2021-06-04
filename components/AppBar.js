@@ -11,23 +11,13 @@ export default function AppBar() {
           </Link>
         </li>
         <li>
-          <Link href="/#about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#certificate">
-            <a>Certificate</a>
-          </Link>
-        </li>
-        <li>
           <Link href="/#projects">
             <a>Project</a>
           </Link>
         </li>
         <li>
-          <Link href="/#contact">
-            <a>Contact</a>
+          <Link href="/#certificate">
+            <a>Certificate</a>
           </Link>
         </li>
         <li>
