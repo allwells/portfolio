@@ -22,7 +22,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <AppBar />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

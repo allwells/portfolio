@@ -1,20 +1,23 @@
 .footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  height: 7em;
+  border-top: 2px solid #383b41;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 1em;
+}
+
+.footer p {
+  color: #adbac7;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  color: #ffffff;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.footer a:hover {
+  color: #adbac7;
+  text-decoration: underline;
 }
