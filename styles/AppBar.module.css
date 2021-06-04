@@ -53,18 +53,18 @@
 }
 
 .socialItems li a {
-  font-size: large;
+  /* font-size: large;
   font-weight: 500;
   padding: 0.3em 0.6em;
   border-radius: 50%;
   color: transparent;
   background-color: #383b41;
   border: 2px solid #383b41;
-  transition-duration: 0.3s;
+  transition-duration: 0.3s; */
 }
 
 .socialItems li a:hover {
-  background-color: transparent;
-  color: #adbac7;
+  /* background-color: transparent;
+  color: #adbac7; */
 }
 /*----------------------------- END SOCIAL LINKS -----------------------------*/

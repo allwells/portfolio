@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/AppBar.module.css";
 
 export default function AppBar() {
@@ -29,27 +30,37 @@ export default function AppBar() {
       <ul className={styles.socialItems}>
         <li>
           <Link href="/#facebook">
-            <a>G</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#instagram">
-            <a>G</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#twitter">
-            <a>G</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#github">
-            <a>G</a>
+            <a>
+              <Image src="/facebook-inactive.svg" width={25} height={25} />
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/#linkedin">
-            <a>G</a>
+            <a>
+              <Image src="/linkedin-inactive.svg" width={25} height={25} />
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#twitter">
+            <a>
+              <Image src="/twitter-inactive.svg" width={25} height={25} />
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#github">
+            <a>
+              <Image src="/github-inactive.svg" width={25} height={25} />
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#gmail">
+            <a>
+              <Image src="/gmail-inactive.svg" width={25} height={25} />
+            </a>
           </Link>
         </li>
       </ul>
