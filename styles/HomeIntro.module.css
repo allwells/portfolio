@@ -11,3 +11,18 @@
   text-align: center;
   color: #adbac7;
 }
+
+.profileParent {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.profileBorder {
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.profile {
+  border-radius: 50%;
+}
