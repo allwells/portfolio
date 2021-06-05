@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/AppBar.module.css";
 
 export default function AppBar() {
@@ -37,43 +36,6 @@ export default function AppBar() {
           </Link>
         </li>
       </ul>
-      {/* <ul className={styles.socialItems}>
-        <li>
-          <Link href="/#facebook">
-            <a>
-              <div className={styles.facebook}></div>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#linkedin">
-            <a>
-              <div className={styles.linkedin}></div>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#twitter">
-            <a>
-              <div className={styles.twitter}></div>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#github">
-            <a>
-              <div className={styles.github}></div>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#gmail">
-            <a>
-              <div className={styles.gmail}></div>
-            </a>
-          </Link>
-        </li>
-      </ul> */}
     </div>
   );
 }

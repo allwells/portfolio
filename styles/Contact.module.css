@@ -12,6 +12,18 @@
   color: #adbac7;
 }
 
+.socialLinks {
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+  align-self: center;
+  background-color: firebrick;
+}
+
+.socialLinks img {
+  margin: 0.5em 0;
+}
+
 .sendEmail {
   display: flex;
   flex-direction: column;
