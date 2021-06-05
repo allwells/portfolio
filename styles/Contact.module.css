@@ -1,0 +1,76 @@
+.contact {
+  height: fit-content;
+  padding: 1em 20em;
+  margin-bottom: 6em;
+}
+
+.contact h1 {
+  padding-top: 3em;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  color: #adbac7;
+}
+
+.sendEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.sendEmail input {
+  height: 50px;
+  width: 100%;
+  border-radius: 2px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 200;
+  color: #adbac7;
+  padding-left: 0.5em;
+  border: 1px solid #444c56;
+  background-color: #dbe5ee11;
+}
+
+.sendEmail input:focus {
+  border: 1px solid #adbac7;
+}
+
+.sendEmail div {
+  margin: 0.7em 0;
+  width: 100%;
+}
+
+.sendEmail .messageField {
+  width: 100%;
+  height: 16em;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #444c56;
+  font-size: 16px;
+  font-weight: 200;
+  color: #adbac7;
+  padding: 1em 0.7em;
+  background-color: #dbe5ee11;
+}
+
+.sendEmail .messageField:focus {
+  border: 1px solid #adbac7;
+}
+
+.sendButton {
+  width: 100%;
+  height: 4em;
+  border-radius: 2px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 200;
+  color: #adbac7;
+  background-color: #dbe5ee11;
+  border: 1px solid #444c56;
+}
+
+.sendButton:hover {
+  cursor: pointer;
+  background-color: #444c56;
+}

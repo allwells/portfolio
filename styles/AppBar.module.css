@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
+  background-color: #22272e;
+  z-index: 1;
+  width: 100%;
 }
 
 .appbarItems {

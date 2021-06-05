@@ -1,8 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero";
 import AppBar from "../components/AppBar";
 import Footer from "../components/Footer";
-import HomeIntro from "../components/HomeIntro";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
 const name = "Allwell Onen";
 export const siteTitle = name;
@@ -22,8 +24,10 @@ export default function Home() {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Hero />
       <AppBar />
-      <HomeIntro />
+      <About about="about" />
+      <Contact contact_me="contact" />
       <Footer />
     </div>
   );
