@@ -12,13 +12,23 @@ export default function AppBar() {
           </Link>
         </li>
         <li>
-          <Link href="/#projects">
-            <a>Project</a>
+          <Link href="/#about">
+            <a>About</a>
           </Link>
         </li>
         <li>
-          <Link href="/#certificate">
-            <a>Certificate</a>
+          <Link href="/#contact">
+            <a>Contact</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#projects">
+            <a>Projects</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/#certificates">
+            <a>Certificates</a>
           </Link>
         </li>
         <li>
@@ -27,7 +37,7 @@ export default function AppBar() {
           </Link>
         </li>
       </ul>
-      <ul className={styles.socialItems}>
+      {/* <ul className={styles.socialItems}>
         <li>
           <Link href="/#facebook">
             <a>
@@ -63,7 +73,7 @@ export default function AppBar() {
             </a>
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }
