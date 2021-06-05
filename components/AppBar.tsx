@@ -31,35 +31,35 @@ export default function AppBar() {
         <li>
           <Link href="/#facebook">
             <a>
-              <Image src="/facebook-inactive.svg" width={25} height={25} />
+              <div className={styles.facebook}></div>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/#linkedin">
             <a>
-              <Image src="/linkedin-inactive.svg" width={25} height={25} />
+              <div className={styles.linkedin}></div>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/#twitter">
             <a>
-              <Image src="/twitter-inactive.svg" width={25} height={25} />
+              <div className={styles.twitter}></div>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/#github">
             <a>
-              <Image src="/github-inactive.svg" width={25} height={25} />
+              <div className={styles.github}></div>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/#gmail">
             <a>
-              <Image src="/gmail-inactive.svg" width={25} height={25} />
+              <div className={styles.gmail}></div>
             </a>
           </Link>
         </li>

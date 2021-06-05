@@ -49,22 +49,9 @@
 
 .socialItems li {
   list-style: none;
-  margin: 0 1em;
+  margin: 0 0.3em;
 }
-
-.socialItems li a {
-  /* font-size: large;
-  font-weight: 500;
-  padding: 0.3em 0.6em;
-  border-radius: 50%;
-  color: transparent;
-  background-color: #383b41;
-  border: 2px solid #383b41;
-  transition-duration: 0.3s; */
-}
-
-.socialItems li a:hover {
-  /* background-color: transparent;
-  color: #adbac7; */
-}
+/*
+  NOTE: Copy social links from github README.md
+*/
 /*----------------------------- END SOCIAL LINKS -----------------------------*/
