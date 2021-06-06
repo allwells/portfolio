@@ -21,18 +21,18 @@ export default function AppBar() {
           </Link>
         </li>
         <li>
-          <Link href="/#projects">
-            <a href="/#projects">Projects</a>
+          <Link href="/works">
+            <a href="/works">Works</a>
           </Link>
         </li>
         <li>
-          <Link href="/#certificates">
-            <a href="/#certificates">Certificates</a>
+          <Link href="/certificates">
+            <a href="/certificates">Certificates</a>
           </Link>
         </li>
         <li>
-          <Link href="/#links">
-            <a href="/#links">Useful Links</a>
+          <Link href="/useful-links">
+            <a href="/useful-links">Useful Links</a>
           </Link>
         </li>
       </ul>
