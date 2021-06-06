@@ -1,41 +1,41 @@
 import Link from "next/link";
-import styles from "../styles/AppBar.module.css";
+import StyledAppBar from "../../styles/AppBar.module";
 
 export default function AppBar() {
   return (
-    <div className={styles.appbar}>
-      <ul className={styles.appbarItems}>
+    <StyledAppBar>
+      <ul className="appbarItems">
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a href="/">Home</a>
           </Link>
         </li>
         <li>
           <Link href="/#about">
-            <a>About</a>
+            <a href="/#about">About</a>
           </Link>
         </li>
         <li>
           <Link href="/#contact">
-            <a>Contact</a>
+            <a href="/#contact">Contact</a>
           </Link>
         </li>
         <li>
           <Link href="/#projects">
-            <a>Projects</a>
+            <a href="/#projects">Projects</a>
           </Link>
         </li>
         <li>
           <Link href="/#certificates">
-            <a>Certificates</a>
+            <a href="/#certificates">Certificates</a>
           </Link>
         </li>
         <li>
           <Link href="/#links">
-            <a>Useful Links</a>
+            <a href="/#links">Useful Links</a>
           </Link>
         </li>
       </ul>
-    </div>
+    </StyledAppBar>
   );
 }

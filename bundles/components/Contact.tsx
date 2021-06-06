@@ -1,4 +1,4 @@
-import styles from "../styles/Contact.module.css";
+import StyledContact from "../../styles/Contact.module";
 import Image from "next/image";
 
 function Input({ type, classname }) {
@@ -7,12 +7,12 @@ function Input({ type, classname }) {
 
 export default function Contact({ contact_me }) {
   return (
-    <div className={styles.contact}>
+    <StyledContact>
       <h1 id={contact_me}>Get in Touch</h1>
-      <div className={styles.socialLinks}>
+      <div className="socialLinks">
         <div>
           <a
-            className={styles.facebook}
+            className="facebook"
             href="https://facebook.com/allwell.onen"
             target="_blank"
           >
@@ -21,7 +21,7 @@ export default function Contact({ contact_me }) {
         </div>
         <div>
           <a
-            className={styles.linkedin}
+            className="linkedin"
             href="https://linkedin.com/in/allwell-festus"
             target="_blank"
           >
@@ -29,17 +29,13 @@ export default function Contact({ contact_me }) {
           </a>
         </div>
         <div>
-          <a
-            className={styles.telegram}
-            href="https://t.me/allwells"
-            target="_blank"
-          >
+          <a className="telegram" href="https://t.me/allwells" target="_blank">
             <Image src="/telegram-inactive.svg" width={10} height={10} />
           </a>
         </div>
         <div>
           <a
-            className={styles.whatsapp}
+            className="whatsapp"
             href="https://wa.me/+2348023495323"
             target="_blank"
           >
@@ -48,7 +44,7 @@ export default function Contact({ contact_me }) {
         </div>
         <div>
           <a
-            className={styles.gmail}
+            className="gmail"
             href="mailto:aleenfestus@gmail.com"
             target="_blank"
           >
@@ -56,38 +52,38 @@ export default function Contact({ contact_me }) {
           </a>
         </div>
       </div>
-      <div className={styles.or}>
+      <div className="or">
         <div></div>
         <p>OR</p>
         <div></div>
       </div>
-      <div className={styles.sendEmail}>
-        <div className={styles.namePanel}>
+      <div className="sendEmail">
+        <div className="namePanel">
           <p>
             Name <span>*</span>
           </p>
-          <Input type="text" classname={styles.nameField} />
+          <Input type="text" classname="nameField" />
         </div>
-        <div className={styles.emailPanel}>
+        <div className="emailPanel">
           <p>
             Email Address <span>*</span>
           </p>
-          <Input type="text" classname={styles.emailField} />
+          <Input type="text" classname="emailField" />
         </div>
-        <div className={styles.companyPanel}>
+        <div className="companyPanel">
           <p>Company</p>
-          <Input type="text" classname={styles.companyField} />
+          <Input type="text" classname="companyField" />
         </div>
-        <div className={styles.messagePanel}>
+        <div className="messagePanel">
           <p>
             Message <span>*</span>
           </p>
-          <textarea className={styles.messageField} />
+          <textarea className="messageField" />
         </div>
-        <div className={styles.sendButtonPanel}>
-          <button className={styles.sendButton}>Send</button>
+        <div className="sendButtonPanel">
+          <button className="sendButton">Send</button>
         </div>
       </div>
-    </div>
+    </StyledContact>
   );
 }
