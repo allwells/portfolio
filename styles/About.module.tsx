@@ -5,7 +5,8 @@ const StyledAbout = styled.div`
   height: 100%;
   margin: 1em 1em;
   padding: 1em 22em;
-  border-radius: 5px;
+  padding-bottom: 8em;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border01};
 
   h1 {
     padding-top: 3em;
