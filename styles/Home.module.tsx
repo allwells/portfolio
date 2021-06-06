@@ -5,7 +5,7 @@ const StyledHome = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #22272e;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 export default StyledHome;

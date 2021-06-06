@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-  .contact {
-    height: fit-content;
-    padding: 1em 20em;
-    margin-bottom: 6em;
-  }
+  height: fit-content;
+  padding: 1em 20em;
+  margin-bottom: 6em;
 
-  .contact h1 {
+  h1 {
     padding-top: 2.5em;
     font-size: 48px;
     font-weight: 600;
@@ -112,19 +110,19 @@ const StyledContact = styled.div`
     background-color: #444c56;
   }
 
-  .contact .or {
+  .or {
     display: flex;
     justify-content: center;
     margin-top: 6em;
   }
 
-  .contact .or p {
+  .or p {
     color: #adbac7;
     font-size: 16px;
     font-weight: 300;
   }
 
-  .contact .or div {
+  .or div {
     height: 2px;
     background-color: #444c56;
     width: 5%;

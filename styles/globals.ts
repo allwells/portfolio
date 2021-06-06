@@ -4,6 +4,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   a {
@@ -16,13 +17,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   *::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
+    width: 7px;
+    background-color: ${({ theme }) => theme.colors.whitesmoke};
   }
 
   *::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
+    background-color: ${({ theme }) => theme.colors.whitesmoke};
   } 
 
   *::-webkit-scrollbar-thumb {

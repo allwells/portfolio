@@ -5,6 +5,7 @@ const theme = {
     border02: "#6e7681",
     text: "#adbac7",
     hoverBtn: "#444c56",
+    whitesmoke: "#f5f5f5",
   },
   tablet: "760px",
   ipad: "860px",

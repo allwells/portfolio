@@ -10,11 +10,9 @@ interface Props {}
 const HomePage: React.FC<Props> = () => {
   return (
     <div>
-      <AppBar />
       <Hero />
       <About about="about" />
       <Contact contact_me="contact" />
-      <Footer />
     </div>
   );
 };

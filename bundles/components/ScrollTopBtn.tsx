@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 
 const StyledScrollTopBtn = styled.button`
@@ -58,7 +59,7 @@ const ScrollTopBtn = () => {
       onClick={scrollTop}
       style={{ height: 40, display: showScroll ? "flex" : "none" }}
     >
-      <img src="up-arrow.svg" alt="arrow" width="20" height="20" />
+      <Image src="/up-arrow.svg" alt="arrow" width="20" height="20" />
     </StyledScrollTopBtn>
   );
 };
