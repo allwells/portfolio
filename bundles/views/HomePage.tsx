@@ -10,6 +10,7 @@ interface Props {}
 const HomePage: React.FC<Props> = () => {
   return (
     <div>
+      <title>Home | Allwell Onen</title>
       <Hero />
       <About about="about" />
       <Contact contact_me="contact" />

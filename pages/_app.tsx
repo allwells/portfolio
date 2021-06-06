@@ -5,8 +5,7 @@ import { ThemeProvider } from "styled-components";
 import React from "react";
 import Head from "next/head";
 
-const name = "Allwell Onen";
-export const siteTitle = name;
+export const siteTitle = "Home | Allwell Onen";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
