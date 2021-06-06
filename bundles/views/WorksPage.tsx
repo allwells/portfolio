@@ -1,17 +1,26 @@
 import React from "react";
-import AppBar from "../components/AppBar";
-import Footer from "../components/Footer";
+import styled from "styled-components";
 
 interface Props {}
 
+const StyledWorksPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 87.5vh;
+
+  h1 {
+    align-self: center;
+    color: ${({ theme }) => theme.colors.text};
+  }
+`;
+
 const WorksPage: React.FC<Props> = () => {
   return (
-    <div>
-      <title>Works</title>
-      <AppBar />
+    <StyledWorksPage>
       <h1>Works coming soon...</h1>
-      <Footer />
-    </div>
+    </StyledWorksPage>
   );
 };
 

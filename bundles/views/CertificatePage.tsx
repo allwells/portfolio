@@ -1,17 +1,26 @@
 import React from "react";
-import AppBar from "../components/AppBar";
-import Footer from "../components/Footer";
+import styled from "styled-components";
 
 interface Props {}
 
+const StyledCertificatePage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 87.5vh;
+
+  h1 {
+    align-self: center;
+    color: ${({ theme }) => theme.colors.text};
+  }
+`;
+
 const CertificatePage: React.FC<Props> = () => {
   return (
-    <div>
-      <title>Certificates</title>
-      <AppBar />
+    <StyledCertificatePage>
       <h1>Certificates coming soon...</h1>
-      <Footer />
-    </div>
+    </StyledCertificatePage>
   );
 };
 

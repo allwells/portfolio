@@ -1,17 +1,26 @@
 import React from "react";
-import AppBar from "../components/AppBar";
-import Footer from "../components/Footer";
+import styled from "styled-components";
 
 interface Props {}
 
+const StyledLinksPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 87.5vh;
+
+  h1 {
+    align-self: center;
+    color: ${({ theme }) => theme.colors.text};
+  }
+`;
+
 const LinksPage: React.FC<Props> = () => {
   return (
-    <div>
-      <title>Useful Links</title>
-      <AppBar />
+    <StyledLinksPage>
       <h1>Useful links coming soon...</h1>
-      <Footer />
-    </div>
+    </StyledLinksPage>
   );
 };
 
