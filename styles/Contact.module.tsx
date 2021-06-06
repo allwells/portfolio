@@ -27,15 +27,15 @@ const StyledContact = styled.div`
     outline: none;
     font-size: 16px;
     font-weight: 200;
-    color: #adbac7;
+    color: ${({ theme }) => theme.colors.text};
     padding-left: 0.5em;
-    border: 1px solid #444c56;
-    background-color: #dbe5ee11;
+    border: 1px solid ${({ theme }) => theme.colors.hoverBtn};
+    background-color: ${({ theme }) => theme.colors.textField};
     transition-duration: 0.5s;
   }
 
   .sendEmail input:focus {
-    border: 1px solid #adbac7;
+    border: 1px solid ${({ theme }) => theme.colors.text};
   }
 
   .sendEmail div {
@@ -48,17 +48,17 @@ const StyledContact = styled.div`
     height: 16em;
     border-radius: 2px;
     outline: none;
-    border: 1px solid #444c56;
+    border: 1px solid ${({ theme }) => theme.colors.hoverBtn};
     font-size: 16px;
     font-weight: 200;
-    color: #adbac7;
+    color: ${({ theme }) => theme.colors.text};
     padding: 1em 0.7em;
-    background-color: #dbe5ee11;
+    background-color: ${({ theme }) => theme.colors.textField};
     transition-duration: 0.5s;
   }
 
   .sendEmail .messageField:focus {
-    border: 1px solid #adbac7;
+    border: 1px solid ${({ theme }) => theme.colors.text};
   }
 
   .sendButton {
@@ -68,9 +68,9 @@ const StyledContact = styled.div`
     outline: none;
     font-size: 18px;
     font-weight: 500;
-    color: #adbac7;
-    background-color: #444c56;
-    border: 1px solid #444c56;
+    color: ${({ theme }) => theme.colors.text};
+    background-color: ${({ theme }) => theme.colors.hoverBtn};
+    border: 1px solid ${({ theme }) => theme.colors.hoverBtn};
     transition-duration: 0.3s;
   }
 
@@ -81,7 +81,7 @@ const StyledContact = styled.div`
 
   .sendEmail p {
     font-size: 18px;
-    color: #adbac7;
+    color: ${({ theme }) => theme.colors.text};
   }
 
   .sendEmail span {
@@ -103,11 +103,11 @@ const StyledContact = styled.div`
   .socialLinks a {
     border-radius: 50%;
     padding-top: 1.1em;
-    border: 2px solid #adbac7aa;
+    border: 2px solid ${({ theme }) => theme.colors.textLight};
   }
 
   .socialLinks a:hover {
-    background-color: #444c56;
+    background-color: ${({ theme }) => theme.colors.hoverBtn};
   }
 
   .or {
@@ -117,14 +117,14 @@ const StyledContact = styled.div`
   }
 
   .or p {
-    color: #adbac7;
+    color: ${({ theme }) => theme.colors.text};
     font-size: 16px;
     font-weight: 300;
   }
 
   .or div {
     height: 2px;
-    background-color: #444c56;
+    background-color: ${({ theme }) => theme.colors.hoverBtn};
     width: 5%;
     margin: 2em 1em;
   }
