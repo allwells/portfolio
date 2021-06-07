@@ -11,7 +11,7 @@ const StyledContact = styled.div`
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    color: #adbac7;
+    color: ${({ theme }) => theme.lightTheme.text};
   }
 
   .sendEmail {
@@ -28,15 +28,15 @@ const StyledContact = styled.div`
     outline: none;
     font-size: 16px;
     font-weight: 200;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.lightTheme.text};
     padding-left: 0.5em;
-    border: 1px solid ${({ theme }) => theme.colors.hoverBtn};
-    background-color: ${({ theme }) => theme.colors.textField};
+    border: 1px solid ${({ theme }) => theme.lightTheme.border02};
+    background-color: ${({ theme }) => theme.lightTheme.textField};
     transition-duration: 0.5s;
   }
 
   .sendEmail input:focus {
-    border: 1px solid ${({ theme }) => theme.colors.text};
+    border: 1px solid ${({ theme }) => theme.lightTheme.text};
   }
 
   .sendEmail div {
@@ -49,17 +49,16 @@ const StyledContact = styled.div`
     height: 16em;
     border-radius: 2px;
     outline: none;
-    border: 1px solid ${({ theme }) => theme.colors.hoverBtn};
+    border: 1px solid ${({ theme }) => theme.lightTheme.border02};
     font-size: 16px;
     font-weight: 200;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.lightTheme.text};
     padding: 1em 0.7em;
-    background-color: ${({ theme }) => theme.colors.textField};
+    background-color: ${({ theme }) => theme.lightTheme.textField};
     transition-duration: 0.5s;
-  }
-
-  .sendEmail .messageField:focus {
-    border: 1px solid ${({ theme }) => theme.colors.text};
+    &:focus {
+      border: 1px solid ${({ theme }) => theme.lightTheme.text};
+    }
   }
 
   .sendButton {
@@ -69,20 +68,20 @@ const StyledContact = styled.div`
     outline: none;
     font-size: 18px;
     font-weight: 500;
-    color: ${({ theme }) => theme.colors.text};
-    background-color: ${({ theme }) => theme.colors.hoverBtn};
-    border: 1px solid ${({ theme }) => theme.colors.hoverBtn};
+    color: ${({ theme }) => theme.lightTheme.primary};
+    background-color: ${({ theme }) => theme.lightTheme.text};
+    border: 1px solid ${({ theme }) => theme.lightTheme.text};
     transition-duration: 0.3s;
-  }
-
-  .sendButton:hover {
-    cursor: pointer;
-    background-color: #dbe5ee11;
+    &:hover {
+      cursor: pointer;
+      color: ${({ theme }) => theme.lightTheme.text};
+      background-color: #dbe5ee22;
+    }
   }
 
   .sendEmail p {
     font-size: 18px;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.lightTheme.text};
   }
 
   .sendEmail span {
@@ -104,11 +103,13 @@ const StyledContact = styled.div`
   .socialLinks a {
     border-radius: 50%;
     padding-top: 1.1em;
-    border: 2px solid ${({ theme }) => theme.colors.textLight};
-  }
-
-  .socialLinks a:hover {
-    background-color: ${({ theme }) => theme.colors.hoverBtn};
+    background-color: ${({ theme }) => theme.lightTheme.text};
+    border: 2px solid transparent;
+    transition-duration: 0.3s;
+    &:hover {
+      background-color: transparent;
+      border: 2px solid ${({ theme }) => theme.lightTheme.text};
+    }
   }
 
   .or {
@@ -118,14 +119,14 @@ const StyledContact = styled.div`
   }
 
   .or p {
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.lightTheme.text};
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .or div {
     height: 2px;
-    background-color: ${({ theme }) => theme.colors.hoverBtn};
+    background-color: ${({ theme }) => theme.lightTheme.text};
     width: 5%;
     margin: 2em 1em;
   }

@@ -9,7 +9,7 @@ const StyledScrollTopBtn = styled.button`
   width: 40px;
   right: 1rem;
   align-items: center;
-  background: ${({ theme }) => theme.colors.black80};
+  background: ${({ theme }) => theme.lightTheme.black80};
   justify-content: center;
   z-index: 1000;
   cursor: pointer;

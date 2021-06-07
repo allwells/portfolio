@@ -8,13 +8,13 @@ const StyledHero = styled.div`
   place-items: center;
   height: 100vh;
   margin: 0 1em;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.border01};
+  border-bottom: 1px solid ${({ theme }) => theme.lightTheme.border01};
 
   .welcomeText {
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.lightTheme.text};
     margin-top: 2em;
   }
 
@@ -34,7 +34,7 @@ const StyledHero = styled.div`
     font-size: 24px;
     font-weight: 300;
     text-align: center;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.lightTheme.text};
   }
 `;
 

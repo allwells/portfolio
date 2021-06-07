@@ -6,7 +6,7 @@ const StyledAppBar = styled.div`
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.lightTheme.primary};
   z-index: 1;
   width: 100%;
 
@@ -16,7 +16,7 @@ const StyledAppBar = styled.div`
     justify-content: center;
     place-items: center;
     height: 9em;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.border01};
+    border-bottom: 1px solid ${({ theme }) => theme.lightTheme.border01};
     padding-bottom: 0.5em;
     margin: 0 1em;
   }
@@ -28,16 +28,18 @@ const StyledAppBar = styled.div`
 
   .appbarItems li a {
     font-size: large;
-    font-weight: 500;
+    font-weight: 400;
     padding: 0.5em 1em;
     border-radius: 3px;
-    color: ${({ theme }) => theme.colors.text};
-    border: 1px solid ${({ theme }) => theme.colors.border02};
+    color: ${({ theme }) => theme.lightTheme.primary};
+    background-color: ${({ theme }) => theme.lightTheme.text};
+    border: 1px solid transparent;
     transition-duration: 0.3s;
-  }
-
-  .appbarItems li a:hover {
-    background-color: ${({ theme }) => theme.colors.hoverBtn};
+    &:hover {
+      color: ${({ theme }) => theme.lightTheme.text};
+      border: 1px solid none;
+      background-color: transparent;
+    }
   }
 `;
 
