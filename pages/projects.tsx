@@ -1,11 +1,11 @@
 import React from "react";
 import MainLayout from "../bundles/layouts/MainLayout";
-import WorksPage from "../bundles/views/WorksPage";
+import ProjectPage from "../bundles/views/ProjectPage";
 
-export default function Works() {
+export default function Project() {
   return (
     <MainLayout>
-      <WorksPage />
+      <ProjectPage />
     </MainLayout>
   );
 }

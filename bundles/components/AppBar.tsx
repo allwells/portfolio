@@ -73,8 +73,8 @@ export default function AppBar() {
           </Link>
         </li>
         <li>
-          <Link href="/useful-links">
-            <a href="/useful-links">Useful Links</a>
+          <Link href="/links">
+            <a href="/links">Links</a>
           </Link>
         </li>
       </ul>

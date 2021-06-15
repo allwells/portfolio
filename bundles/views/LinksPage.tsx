@@ -21,9 +21,9 @@ const LinksPage: React.FC<Props> = () => {
   return (
     <StyledLinksPage>
       <Head>
-        <title>Useful Links</title>
+        <title>Links</title>
       </Head>
-      <h1>Useful links coming soon...</h1>
+      <h1>Links coming soon...</h1>
     </StyledLinksPage>
   );
 };

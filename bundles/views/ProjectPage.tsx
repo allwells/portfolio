@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 interface Props {}
 
-const StyledWorksPage = styled.div`
+const StyledProjectPage = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-bewteen;
@@ -129,13 +129,13 @@ const StyledWorksPage = styled.div`
   }
 `;
 
-const WorksPage: React.FC<Props> = () => {
+const ProjectPage: React.FC<Props> = () => {
   return (
-    <StyledWorksPage>
+    <StyledProjectPage>
       <Head>
-        <title>Works | Allwell Onen</title>
+        <title>Projects | Allwell Onen</title>
       </Head>
-      <h1>Works</h1>
+      <h1>Projects</h1>
       <div className="worksLayout">
         <div className="works">
           <div className="workLink">
@@ -199,8 +199,8 @@ const WorksPage: React.FC<Props> = () => {
           </div>
         </div>
       </div>
-    </StyledWorksPage>
+    </StyledProjectPage>
   );
 };
 
-export default WorksPage;
+export default ProjectPage;
