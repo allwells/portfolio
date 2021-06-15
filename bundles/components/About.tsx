@@ -22,6 +22,22 @@ const StyledAbout = styled.div`
     text-align: center;
     color: ${({ theme }) => theme.lightTheme.text};
   }
+
+  @media screen and (min-width: 270px) and (max-width: 411px) {
+    margin: 0;
+    padding: 1.5em;
+
+    h1 {
+      padding-top: 1em;
+      font-size: 34px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
 `;
 
 export default function About({ about }) {

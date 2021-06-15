@@ -102,13 +102,11 @@ const StyledContact = styled.div`
 
   .socialLinks a {
     border-radius: 50%;
-    padding-top: 1.1em;
-    background-color: ${({ theme }) => theme.lightTheme.text};
-    border: 2px solid transparent;
-    transition-duration: 0.3s;
+    background-color: transparent;
+    border: none;
     &:hover {
-      background-color: transparent;
-      border: 2px solid ${({ theme }) => theme.lightTheme.text};
+      border: none;
+      background-color: ${({ theme }) => theme.lightTheme.text + "33"};
     }
   }
 
@@ -116,19 +114,115 @@ const StyledContact = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 6em;
+
+    p {
+      color: ${({ theme }) => theme.lightTheme.text};
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    div {
+      height: 2px;
+      background-color: ${({ theme }) => theme.lightTheme.text};
+      width: 5%;
+      margin: 2em 1em;
+    }
   }
 
-  .or p {
-    color: ${({ theme }) => theme.lightTheme.text};
-    font-size: 16px;
-    font-weight: 400;
+  @media screen and (min-width: 412px) and (max-width: 768px) {
   }
 
-  .or div {
-    height: 2px;
-    background-color: ${({ theme }) => theme.lightTheme.text};
-    width: 5%;
-    margin: 2em 1em;
+  @media screen and (min-width: 270px) and (max-width: 411px) {
+    padding: 0 1em;
+    margin-bottom: 3em;
+
+    .sendButton {
+      width: 5em;
+      height: 2em;
+      font-size: 16px;
+    }
+
+    .sendEmail {
+      div {
+        margin: 0.5em 0;
+        width: 100%;
+      }
+
+      .messageField {
+        height: 9em;
+        font-size: 14px;
+        font-weight: 200;
+        &:focus {
+          border: 1px solid ${({ theme }) => theme.lightTheme.text};
+        }
+      }
+
+      p {
+        font-size: 14px;
+        color: ${({ theme }) => theme.lightTheme.text};
+      }
+
+      input {
+        height: 2.7em;
+        width: 100%;
+        border-radius: 2px;
+        outline: none;
+        font-size: 13px;
+        font-weight: 200;
+        color: ${({ theme }) => theme.lightTheme.text};
+        padding-left: 0.5em;
+        border: 1px solid ${({ theme }) => theme.lightTheme.border02};
+        background-color: ${({ theme }) => theme.lightTheme.textField};
+        transition-duration: 0.5s;
+      }
+    }
+
+    h1 {
+      padding-top: 1em;
+      font-size: 34px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      margin-top: 3em;
+      margin-bottom: 0;
+
+      a {
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        &:hover {
+          border: none;
+          background-color: ${({ theme }) => theme.lightTheme.text + "33"};
+        }
+      }
+    }
+
+    .or {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+
+      p {
+        color: ${({ theme }) => theme.lightTheme.text};
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      div {
+        height: 1px;
+        width: 10%;
+        margin: 1.6em 1em;
+      }
+    }
   }
 `;
 

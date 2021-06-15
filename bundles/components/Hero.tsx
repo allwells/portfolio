@@ -10,14 +10,6 @@ const StyledHero = styled.div`
   margin: 0 1em;
   border-bottom: 1px solid ${({ theme }) => theme.lightTheme.border01};
 
-  .welcomeText {
-    font-size: 48px;
-    font-weight: 600;
-    text-align: center;
-    color: ${({ theme }) => theme.lightTheme.text};
-    margin-top: 2em;
-  }
-
   .profileParent {
     display: flex;
     justify-content: center;
@@ -36,12 +28,24 @@ const StyledHero = styled.div`
     text-align: center;
     color: ${({ theme }) => theme.lightTheme.text};
   }
+
+  @media screen and (min-width: 270px) and (max-width: 411px) {
+    .profileParent {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+
+    .name {
+      margin-top: 1em;
+      font-size: 17px;
+      font-weight: 200;
+    }
+  }
 `;
 
 export default function Hero() {
   return (
     <StyledHero>
-      <h1 className="welcomeText">Welcome To My Page</h1>
       <div className="profileParent">
         <Image
           className="profile"
