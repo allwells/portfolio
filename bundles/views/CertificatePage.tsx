@@ -85,7 +85,7 @@ const CertificatePage: React.FC<Props> = () => {
   return (
     <StyledCertificatePage>
       <Head>
-        <title>Certifications | Allwell Onen</title>
+        <title>Allwell Onen • Certification</title>
       </Head>
       <h1>Certifications</h1>
       <div className="certLayout">

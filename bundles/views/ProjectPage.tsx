@@ -133,7 +133,7 @@ const ProjectPage: React.FC<Props> = () => {
   return (
     <StyledProjectPage>
       <Head>
-        <title>Projects | Allwell Onen</title>
+        <title>Allwell Onen • Projects</title>
       </Head>
       <h1>Projects</h1>
       <div className="worksLayout">

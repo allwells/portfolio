@@ -21,9 +21,25 @@ const LinksPage: React.FC<Props> = () => {
   return (
     <StyledLinksPage>
       <Head>
-        <title>Links</title>
+        <title>Allwell Onen • Links</title>
       </Head>
       <h1>Links coming soon...</h1>
+      <h3></h3>
+      <ul className="myLinks">
+        <li>
+          <a href="/#about">PORTFOLIO | ABOUT ME</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/allwell-festus" target="_blank">
+            LINKEDIN
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/allwells" target="_blank">
+            GITHUB
+          </a>
+        </li>
+      </ul>
     </StyledLinksPage>
   );
 };

@@ -19,7 +19,7 @@ const HomePage: React.FC<Props> = () => {
   return (
     <StyledHome>
       <Head>
-        <title>Home | Allwell Onen</title>
+        <title>Allwell Onen • Home</title>
       </Head>
       <Hero />
       <About about="about" />
