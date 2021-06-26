@@ -46,19 +46,12 @@ export default function About({ about }) {
       <h1 id={about}>About</h1>
       <div>
         <p>
-          This is just a dummy text so do not try to read it unless you want to
-          waste your time. This is just a dummy text so do not try to read it
-          unless you want to waste your time. This is just a dummy text so do
-          not try to read it unless you want to waste your time. This is just a
-          dummy text so do not try to read it unless you want to waste your
-          time. This is just a dummy text so do not try to read it unless you
-          want to waste your time. Thank you.
-        </p>
-        <p>
-          This is just a dummy text so do not try to read it unless you want to
-          waste your time. This is just a dummy text so do not try to read it
-          unless you want to waste your time. This is just a dummy text so do
-          not try to read it unless you want to waste your time. Thank you.
+          Hello, my name is Allwell Onen. I am a Fullstack Web Developer. I
+          started this journey in September 2020. Before then I already had my
+          hands on Java for application development, not including web
+          applications. I worked with Java for a year and some months. Now I
+          have my hands on Reactjs and Nodejs for web applications. My stack is
+          MEARNstack.
         </p>
       </div>
     </StyledAbout>

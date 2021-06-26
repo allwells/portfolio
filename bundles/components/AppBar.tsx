@@ -27,7 +27,7 @@ const StyledAppBar = styled.div`
   }
 
   .appbarItems li a {
-    font-size: large;
+    font-size: 14px;
     font-weight: 400;
     padding: 0.5em 1em;
     border-radius: 3px;
