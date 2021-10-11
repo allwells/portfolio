@@ -1,4 +1,4 @@
-import StyledSidebar from "../../styles/sidebar.styled";
+import StyledSidebar from "../../styles/sidebar";
 
 export default function Sidebar() {
   return (
