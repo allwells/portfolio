@@ -1,8 +1,7 @@
+import Head from "next/head";
 import React from "react";
-import styled from "styled-components";
-import Appbar from "../components/AppBar";
-import Footer from "../components/Footer";
 import ScrollTopBtn from "../components/ScrollTopBtn";
+import styled from "styled-components";
 
 interface Props {}
 
@@ -10,6 +9,7 @@ const StyledMainLayout = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: ${({ theme }) => theme.dark.secondary};
   main {
     display: flex;
     flex-direction: column;
@@ -20,9 +20,10 @@ const StyledMainLayout = styled.div`
 const MainLayout: React.FC<Props> = ({ children }) => {
   return (
     <StyledMainLayout>
-      <Appbar />
+      <Head>
+        <title>Allwell's Portfolio</title>
+      </Head>
       <main>{children}</main>
-      <Footer />
       <ScrollTopBtn />
     </StyledMainLayout>
   );

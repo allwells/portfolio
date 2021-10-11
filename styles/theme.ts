@@ -1,6 +1,7 @@
 const theme = {
-  lightTheme: {
-    primary: "#22272e",
+  dark: {
+    primary: "#ec1839",
+    secondary: "#222222",
     border01: "#383b41",
     border02: "#6e7681",
     text: "#adbac7",
@@ -8,7 +9,7 @@ const theme = {
     hoverBtn: "#444c56",
     blacksmoke: "#adbac7aa",
     textField: "#dbe5ee11",
-    programmingLanguage: {
+    lang: {
       java: "#b07219",
       javascript: "#f1e05a",
       typescript: "#2b7489",
@@ -18,8 +19,9 @@ const theme = {
       r: "#198ce7",
     },
   },
-  lighTheme: {
-    primary: "#f5f5f5",
+  light: {
+    primary: "#ffffff",
+    secondary: "#f3f3f3",
     border01: "#dfdfdf",
     border02: "#ababab",
     text: "#22272e",
@@ -27,7 +29,7 @@ const theme = {
     hoverBtn: "#444c56dd",
     blacksmoke: "#444c56",
     textField: "#dbe5ee22",
-    programmingLanguage: {
+    lang: {
       java: "#b07219",
       javascript: "#f1e05a",
       typescript: "#2b7489",
