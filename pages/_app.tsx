@@ -1,21 +1,18 @@
-import theme from "../styles/theme";
 import { AppProps } from "next/app";
 import { GlobalStyles } from "../styles/globals";
-import { ThemeProvider } from "styled-components";
-import React from "react";
 import Head from "next/head";
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import theme from "../styles/theme";
 
-export const siteTitle = "Home | Allwell Onen";
+export const siteTitle = "Allwell Porfolio";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Hi! My name is Allwell Onen. I'm a software..."
-        />
+        <meta name="description" content="Hi! I'm Allwell Onen." />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
