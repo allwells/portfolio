@@ -45,8 +45,9 @@ const StyledHome = styled.div`
 
   .hero {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
+    margin: 6rem 0;
     place-items: center;
     justify-content: center;
 
