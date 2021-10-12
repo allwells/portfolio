@@ -1,32 +1,64 @@
+import Footer from "../components/Footer";
 import Head from "next/head";
 import React from "react";
-import ScrollTopBtn from "../components/ScrollTopBtn";
+import SceneLayout from "./SceneLayout";
 import styled from "styled-components";
 
-interface Props {}
+interface Props {
+  home: any;
+  about: any;
+  service: any;
+  portfolio: any;
+  blog: any;
+  contact: any;
+}
 
-const StyledMainLayout = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: ${({ theme }) => theme.dark.secondary};
-  main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-`;
-
-const MainLayout: React.FC<Props> = ({ children }) => {
+const MainLayout: React.FC<Props> = ({
+  children,
+  home,
+  about,
+  service,
+  portfolio,
+  blog,
+  contact,
+}) => {
   return (
     <StyledMainLayout>
       <Head>
         <title>Allwell's Portfolio</title>
       </Head>
-      <main>{children}</main>
-      <ScrollTopBtn />
+      <SceneLayout
+        home={home}
+        about={about}
+        service={service}
+        portfolio={portfolio}
+        blog={blog}
+        contact={contact}
+      >
+        <main>{children}</main>
+      </SceneLayout>
+      <Footer />
     </StyledMainLayout>
   );
 };
+
+const StyledMainLayout = styled.div`
+  height: 100%;
+  display: flex;
+  padding: 2.5rem;
+  font-family: nunito;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom right,
+    ${({ theme }) => theme.dark.primary},
+    purple
+  );
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+`;
 
 export default MainLayout;

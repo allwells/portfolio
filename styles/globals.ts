@@ -17,16 +17,20 @@ export const GlobalStyles = createGlobalStyle`
 
   *::-webkit-scrollbar {
     width: 7px;
-    background-color: ${({ theme }) => theme.dark.secondary};
   }
 
   *::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: ${({ theme }) => theme.dark.text2};
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: ${({ theme }) => theme.dark.secondary};
   } 
 
   *::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    border-radius: 1rem;
+    background: ${({ theme }) => theme.dark.secondary + "88"};
+
+    &:hover {
+      background: ${({ theme }) => theme.dark.secondary};
+    }
   }
 `;
