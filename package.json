@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "commit": "git add . && git commit -s -am 'Work In Progress...' && git push origin master && clear && exit"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",

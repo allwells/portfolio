@@ -13,6 +13,8 @@ const HomePage: React.FC<Props> = () => {
 };
 
 const Hero = () => {
+  const level = "3rd";
+
   return (
     <div className="hero">
       <div className="left">
@@ -20,9 +22,12 @@ const Hero = () => {
           <span>allwell</span> onen
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-          dicta fuga repellat, maxime quae quos in maiores magni quaerat
-          dignissimos laboriosam.
+          Hi! My name is Allwell Onen. I am a passionate and dedicated Web
+          Developer. I am a {level} year Under-graduate student pursuing BSc in
+          Computer Science. I am an enthusiastic and a social person. I love to
+          take up challenges as it opens ways for possibilities and exposure to
+          new things. I am always interested in meeting new people, exchanging
+          ideas and spreading knowledge and positivity.
         </p>
         <Link href="/docs/cv.pdf" passHref>
           <a className="downloadBtn" target="_blank">
@@ -93,7 +98,7 @@ const StyledHome = styled.div`
         letter-spacing: 0.04rem;
         transition-duration: 0.3s;
         border: 2px solid ${({ theme }) => theme.dark.primary};
-        box-shadow: 0 0 0.5rem ${({ theme }) => theme.dark.black};
+        box-shadow: 0 0.2rem 0.3rem ${({ theme }) => theme.dark.black};
 
         &:hover {
           background: ${({ theme }) => theme.dark.primary};
@@ -111,14 +116,13 @@ const StyledHome = styled.div`
       div {
         width: 26rem;
         height: 26rem;
-        padding: 1rem;
         border-radius: 50%;
         background: url(/profile.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        box-shadow: 0 0 0.8rem ${({ theme }) => theme.dark.black};
-        border: 1.3rem solid ${({ theme }) => theme.dark.tertiary};
+        box-shadow: 0 0 1.5rem ${({ theme }) => theme.dark.black};
+        border: 1.1rem solid ${({ theme }) => theme.dark.tertiary};
       }
     }
   }
