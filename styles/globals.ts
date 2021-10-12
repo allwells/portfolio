@@ -21,16 +21,16 @@ export const GlobalStyles = createGlobalStyle`
 
   *::-webkit-scrollbar-track {
     border-radius: 1rem;
-    background: ${({ theme }) => theme.dark.text2};
+    background: #656565;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   } 
 
   *::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background: ${({ theme }) => theme.dark.secondary + "88"};
+    background: #22222288;
 
     &:hover {
-      background: ${({ theme }) => theme.dark.secondary};
+      background: #222222;
     }
   }
 `;
