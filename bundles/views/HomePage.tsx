@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -24,9 +24,11 @@ const Hero = () => {
           dicta fuga repellat, maxime quae quos in maiores magni quaerat
           dignissimos laboriosam.
         </p>
-        <a className="downloadBtn" href="http://" target="_blank">
-          Download CV
-        </a>
+        <Link href="/docs/cv.pdf" passHref>
+          <a className="downloadBtn" target="_blank">
+            Download CV
+          </a>
+        </Link>
       </div>
       <div className="right">
         <div></div>
@@ -88,8 +90,13 @@ const StyledHome = styled.div`
         border-radius: 2rem;
         padding: 0.5rem 1.5rem;
         letter-spacing: 0.04rem;
+        transition-duration: 0.3s;
         border: 2px solid ${({ theme }) => theme.dark.primary};
         box-shadow: 0 0 0.5rem ${({ theme }) => theme.dark.black};
+
+        &:hover {
+          background: ${({ theme }) => theme.dark.primary};
+        }
       }
     }
 
