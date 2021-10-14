@@ -34,30 +34,33 @@ export default function ScrollTopBtn() {
 }
 
 const StyledScrollTopBtn = styled.button`
-  position: fixed;
+  width: 45px;
   bottom: 20px;
-  height: 40px;
-  width: 40px;
-  right: 1rem;
-  align-items: center;
-  background: ${({ theme }) => theme.dark.black80};
-  justify-content: center;
-  z-index: 1000;
-  cursor: pointer;
-  animation: fadeIn 0.3s;
-  transition: opacity 0.4s;
+  height: 45px;
   opacity: 0.5;
   border: none;
-  border-radius: 100%;
-  background: gray;
+  right: 0.7rem;
   outline: none;
+  z-index: 1000;
+  position: fixed;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 0.5rem;
+  animation: fadeIn 0.3s;
+  justify-content: center;
+  transition: opacity 0.4s;
+  background: ${({ theme }) => theme.dark.secondary};
+  border: 1px solid ${({ theme }) => theme.dark.black};
+
   &:hover {
     opacity: 1;
   }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 0.5;
     }
