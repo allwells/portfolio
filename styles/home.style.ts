@@ -51,7 +51,7 @@ const StyledHome = styled.div`
 
       p {
         font-weight: 350;
-        font-size: 0.95rem;
+        font-size: 1.05rem;
         margin-bottom: 2rem;
         letter-spacing: 0.04rem;
       }
