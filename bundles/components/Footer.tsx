@@ -12,12 +12,12 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="http://instagram.com/allwell_festus" target="_blank">
+          <a href="http://instagram.com/allwells_official" target="_blank">
             Instagram
           </a>
         </li>
         <li>
-          <a href="http://linkedin.com/in/allwell-festus" target="_blank">
+          <a href="http://linkedin.com/in/allwells" target="_blank">
             LinkedIn
           </a>
         </li>
@@ -41,7 +41,7 @@ const StyledFooter = styled.footer`
   place-items: center;
   justify-content: space-between;
   border-radius: 0 0 2.5rem 2.5rem;
-  background: ${({ theme }) => theme.dark.secondary};
+  background: ${({ theme }) => theme.dark.headingBg};
   border-top: 2px solid ${({ theme }) => theme.dark.border};
 
   ul {

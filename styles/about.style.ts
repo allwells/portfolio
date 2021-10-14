@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
 const StyledAbout = styled.div`
-  .aboutMeSection {
+  //-- -- -- ABOUT ME -- -- --
+  .aboutMe {
     width: 100%;
     height: 100%;
     display: flex;
-    margin-bottom: 3rem;
+    margin: 5rem 0;
     place-items: center;
     justify-content: flex-end;
     flex-direction: row-reverse;
 
     .left {
       z-index: 1;
-      width: 50%;
+      width: 45%;
       height: 100%;
       display: flex;
-      padding: 5rem;
-      margin-left: -7rem;
+      padding: 3rem;
+      margin-left: -8rem;
       flex-direction: column;
       place-items: flex-start;
       justify-content: center;
@@ -83,12 +84,12 @@ const StyledAbout = styled.div`
           padding: 0.5rem 1.5rem;
           letter-spacing: 0.04rem;
           transition-duration: 0.5s;
+          box-shadow: 0 0.2rem 0.3rem ${({ theme }) => theme.dark.black};
         }
 
         .downloadBtn {
           margin-right: 1rem;
           border: 2px solid ${({ theme }) => theme.dark.primary.red};
-          box-shadow: 0 0.2rem 0.3rem ${({ theme }) => theme.dark.black};
 
           &:hover {
             background: ${({ theme }) => theme.dark.primary.red};
@@ -97,7 +98,6 @@ const StyledAbout = styled.div`
 
         .hireBtn {
           border: 2px solid ${({ theme }) => theme.dark.text};
-          box-shadow: 0 0.2rem 0.3rem ${({ theme }) => theme.dark.black};
 
           &:hover {
             color: ${({ theme }) => theme.dark.text2};
@@ -108,7 +108,7 @@ const StyledAbout = styled.div`
     }
 
     .right {
-      width: 50%;
+      width: 55%;
       height: 33rem;
       display: flex;
       place-items: center;
@@ -117,7 +117,38 @@ const StyledAbout = styled.div`
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      // box-shadow: 0 0 1rem ${({ theme }) => theme.dark.black};
+    }
+  }
+
+  //-- -- -- RESUME -- -- --
+  .resume {
+    padding: 0 5%;
+    display: flex;
+    place-items: flex-start;
+    justify-content: space-between;
+
+    .education,
+    .experience {
+      margin-bottom: 5rem;
+
+      .cardHolder {
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        place-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+
+    .education {
+      width: 48.5%;
+      // border: 1px solid red;
+    }
+
+    .experience {
+      width: 48.5%;
+      // border: 1px solid purple;
     }
   }
 `;

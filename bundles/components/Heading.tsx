@@ -5,25 +5,36 @@ interface Props {
   heading: string;
 }
 
-const Heading1: React.FC<Props> = ({ heading }) => {
+const Heading101: React.FC<Props> = ({ heading }) => {
   return (
-    <StyledHeading1>
+    <StyledHeading101>
       <h1>{heading}</h1>
-    </StyledHeading1>
+    </StyledHeading101>
   );
 };
 
-const Heading2: React.FC<Props> = ({ heading }) => {
+const Heading102: React.FC<Props> = ({ heading }) => {
   return (
-    <StyledHeading2>
+    <StyledHeading102>
       <h1>{heading}</h1>
       <div className="line1"></div>
       <div className="line2"></div>
-    </StyledHeading2>
+    </StyledHeading102>
   );
 };
 
-const StyledHeading1 = styled.div`
+const Heading201: React.FC<Props> = ({ heading }) => {
+  return (
+    <StyledHeading201>
+      <h2>{heading}</h2>
+      <div className="deadLine">
+        <div className="liveLine"></div>
+      </div>
+    </StyledHeading201>
+  );
+};
+
+const StyledHeading101 = styled.div`
   height: 12rem;
   padding: 0 5%;
   display: flex;
@@ -43,14 +54,16 @@ const StyledHeading1 = styled.div`
   }
 `;
 
-const StyledHeading2 = styled.div`
+const StyledHeading102 = styled.div`
   height: 12rem;
   padding: 0 5%;
   display: flex;
-  margin-bottom: 4rem;
   flex-direction: column;
   place-items: flex-start;
   justify-content: center;
+  background: ${({ theme }) => theme.dark.headingBg};
+  border-top: 2px solid ${({ theme }) => theme.dark.border};
+  border-bottom: 2px solid ${({ theme }) => theme.dark.border};
 
   h1 {
     margin: 0;
@@ -76,4 +89,30 @@ const StyledHeading2 = styled.div`
   }
 `;
 
-export default { Heading1, Heading2 };
+const StyledHeading201 = styled.div`
+  width: fit-content;
+  height: fit-content;
+
+  h2 {
+    margin: 0;
+    color: ${({ theme }) => theme.dark.text};
+  }
+
+  .deadLine {
+    width: 100%;
+    height: 3px;
+    background: ${({ theme }) => theme.dark.border};
+  }
+
+  .liveLine {
+    width: 2rem;
+    height: 100%;
+    background: ${({ theme }) => theme.dark.primary.red};
+  }
+`;
+
+export default {
+  Heading101,
+  Heading102,
+  Heading201,
+};
