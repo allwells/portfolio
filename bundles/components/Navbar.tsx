@@ -122,11 +122,11 @@ const StyledNavbar = styled.nav`
         font-weight: 700;
         text-decoration: none;
         transition-duration: 0.5s;
-        color: ${({ theme }) => theme.dark.primary};
+        color: ${({ theme }) => theme.dark.primary.red};
 
         &:hover {
           cursor: default;
-          color: ${({ theme }) => theme.dark.primary};
+          color: ${({ theme }) => theme.dark.primary.red};
         }
       }
 

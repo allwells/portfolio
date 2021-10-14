@@ -50,7 +50,7 @@ const StyledMainLayout = styled.div`
   flex-direction: column;
   background: linear-gradient(
     to bottom right,
-    ${({ theme }) => theme.dark.primary},
+    ${({ theme }) => theme.dark.primary.red},
     purple
   );
 

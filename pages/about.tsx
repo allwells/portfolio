@@ -1,18 +1,18 @@
-import HomePage from "../bundles/views/HomePage";
+import AboutPage from "../bundles/views/AboutPage";
 import MainLayout from "../bundles/layouts/MainLayout";
 import React from "react";
 
-export default function Home() {
+export default function About(props) {
   return (
     <MainLayout
-      home="active"
-      about={undefined}
+      home={undefined}
+      about="active"
       service={undefined}
       portfolio={undefined}
       blog={undefined}
       contact={undefined}
     >
-      <HomePage />
+      <AboutPage />
     </MainLayout>
   );
 }

@@ -1,7 +1,12 @@
 const theme = {
   dark: {
-    primary: "#db0728",
+    primary: {
+      red: "#db0728",
+      purple: "purple",
+      blue: "royalblue",
+    },
     secondary: "#222222",
+    headingBg: "#252525",
     tertiary: "#444444",
     border: "#333333",
     text: "#e5e5e5",
