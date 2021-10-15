@@ -155,10 +155,17 @@ const StyledAbout = styled.div`
     padding: 0 5%;
 
     .certCards {
+      margin: 0;
+      padding: 0;
       display: flex;
+      flex-wrap: wrap;
       margin-top: 2rem;
-      place-items: center;
-      justify-content: space-between;
+      list-styled: none;
+
+      .cardItem {
+        padding: 1rem;
+        display: flex;
+      }
     }
   }
 `;

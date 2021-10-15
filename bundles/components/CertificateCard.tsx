@@ -50,10 +50,9 @@ const CertificateCard: React.FC<Props> = ({
 };
 
 const StyledCertificateCard = styled.div`
-  width: 48%;
+  width: auto;
   display: flex;
   height: fit-content;
-  margin-bottom: 1rem;
   border-radius: 0.67rem;
   transition-duration: 0.5s;
   background: ${({ theme }) => theme.dark.secondary};
@@ -77,7 +76,7 @@ const StyledCertificateCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.4rem 0 0 1.5rem;
+    padding: 1.4rem 5rem 0 1.5rem;
 
     h3 {
       margin: 0;
