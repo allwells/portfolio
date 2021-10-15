@@ -29,7 +29,7 @@ const AboutMe = () => {
           <p>
             Hi! My name is Allwell Onen. I am a 3rd year UG student pursuing BSc
             in Computer Science from
-            <a id="schoolLink" href="https://aul.edu.ng">
+            <a id="schoolLink" href="https://aul.edu.ng" target="_blank">
               Anchor University
             </a>
             . I am a passionate and dedicated Fullstack Web Developer. My stack
