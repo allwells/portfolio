@@ -138,42 +138,6 @@ const Certificate = () => {
             img="/java.svg"
           />
         </li>
-        <li className="cardItem">
-          <CertificateCard
-            name="Java (Beginner)"
-            organization="SoloLearn"
-            organizationUrl="https://www.linkedin.com/company/sololearn-inc-/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7Yk4CQ6sTW%2BM4aVxpt9K2Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_certification"
-            issued="Oct 2020"
-            expiry="No Expiration Date"
-            id="19951669-1068"
-            url="https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png"
-            img="/java.svg"
-          />
-        </li>
-        <li className="cardItem">
-          <CertificateCard
-            name="Java (Beginner)"
-            organization="SoloLearn"
-            organizationUrl="https://www.linkedin.com/company/sololearn-inc-/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7Yk4CQ6sTW%2BM4aVxpt9K2Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_certification"
-            issued="Oct 2020"
-            expiry="No Expiration Date"
-            id="19951669-1068"
-            url="https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png"
-            img="/java.svg"
-          />
-        </li>
-        <li className="cardItem">
-          <CertificateCard
-            name="Java (Beginner)"
-            organization="SoloLearn"
-            organizationUrl="https://www.linkedin.com/company/sololearn-inc-/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7Yk4CQ6sTW%2BM4aVxpt9K2Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_certification"
-            issued="Oct 2020"
-            expiry="No Expiration Date"
-            id="19951669-1068"
-            url="https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png"
-            img="/java.svg"
-          />
-        </li>
       </ul>
     </div>
   );
