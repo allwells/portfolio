@@ -76,7 +76,7 @@ const StyledCertificateCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.4rem 5rem 0 1.5rem;
+    padding: 1.4rem 1.5rem 0 1.5rem;
 
     h3 {
       margin: 0;

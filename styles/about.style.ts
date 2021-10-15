@@ -163,8 +163,9 @@ const StyledAbout = styled.div`
       list-styled: none;
 
       .cardItem {
-        padding: 1rem;
         display: flex;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
       }
     }
   }
