@@ -143,12 +143,22 @@ const StyledAbout = styled.div`
 
     .education {
       width: 48.5%;
-      // border: 1px solid red;
     }
 
     .experience {
       width: 48.5%;
-      // border: 1px solid purple;
+    }
+  }
+
+  //-- -- -- CERTIFICATIONS -- -- --
+  .certifications {
+    padding: 0 5%;
+
+    .certCards {
+      display: flex;
+      margin-top: 2rem;
+      place-items: center;
+      justify-content: space-between;
     }
   }
 `;

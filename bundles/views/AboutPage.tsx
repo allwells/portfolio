@@ -111,9 +111,30 @@ const Resume = () => {
 
 const Certificate = () => {
   return (
-    <div className="certificate">
-      <heading.Heading201 heading="Certificate" />
-      {/* <CertificateCard id={""} img={""} title={""} issued={""} expiry={""} /> */}
+    <div className="certifications">
+      <heading.Heading201 heading="Certifications" />
+      <div className="certCards">
+        <CertificateCard
+          name="SQL (BASIC)"
+          organization="HackerRank"
+          organizationUrl="https://www.linkedin.com/company/hackerrank/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BFb3g4DrpS3KEWbYzZ71gtQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_certification"
+          issued="April 2021"
+          expiry="No Expiration Date"
+          id="e23ed2be003a"
+          url="https://www.hackerrank.com/certificates/e23ed2be003a"
+          img="/mysql.svg"
+        />
+        <CertificateCard
+          name="Java (Beginner)"
+          organization="SoloLearn"
+          organizationUrl="https://www.linkedin.com/company/sololearn-inc-/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7Yk4CQ6sTW%2BM4aVxpt9K2Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_certification"
+          issued="Oct 2020"
+          expiry="No Expiration Date"
+          id="19951669-1068"
+          url="https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png"
+          img="/java.svg"
+        />
+      </div>
     </div>
   );
 };

@@ -11,6 +11,7 @@ const theme = {
     border: "#333333",
     text: "#e5e5e5",
     text2: "#656565",
+    text3: "#757575",
     black: "#111111",
     lang: {
       java: "#b07219",
