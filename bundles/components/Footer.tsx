@@ -7,7 +7,7 @@ export default function Footer() {
     <StyledFooter>
       <ul className="social">
         <li>
-          <a href="http://facebook.com/allwell.onen" target="_blank">
+          <a href="http://facebook.com/allwells.official" target="_blank">
             Facebook
           </a>
         </li>
