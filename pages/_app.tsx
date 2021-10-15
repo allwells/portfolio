@@ -5,7 +5,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import theme from "../styles/theme";
 
-export const siteTitle = "Allwell Porfolio";
+export const siteTitle = "Allwell's Porfolio";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,9 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Hi! I'm Allwell Onen." />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="blob:https://vercel.com/6d8a19c5-1098-4654-af29-e7ca7f7b7aa8"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
