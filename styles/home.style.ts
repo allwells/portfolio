@@ -189,7 +189,7 @@ const StyledHome = styled.div`
 
       .right {
         div {
-          height: 16rem;
+          height: 20rem;
           background-image: url(/profile2.jpg);
           background-position: top;
         }
