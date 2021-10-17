@@ -11,6 +11,7 @@ interface Props {
   id: string;
   url: string;
   img: string;
+  label: string;
 }
 
 const CertificateCard: React.FC<Props> = ({
@@ -22,6 +23,7 @@ const CertificateCard: React.FC<Props> = ({
   id,
   url,
   img,
+  label,
 }) => {
   return (
     <StyledCertificateCard>
@@ -29,7 +31,9 @@ const CertificateCard: React.FC<Props> = ({
         <Image src={img} width={130} height={151} alt="certificate" />
       </div>
       <div className="certDetail">
-        <h3 className="name">{name}</h3>
+        <div className="nameLabel">
+          <h3 className="name">{name}</h3> <span>{label}</span>
+        </div>
         <a href={organizationUrl} target="_blank">
           {organization}
         </a>
@@ -60,6 +64,22 @@ const StyledCertificateCard = styled.div`
 
   &:hover {
     box-shadow: 0 0.3rem 0.4rem ${({ theme }) => theme.dark.black};
+  }
+
+  .nameLabel {
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+
+    span {
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 0.3rem;
+      padding: 0.15rem 0.4rem;
+      color: ${({ theme }) => theme.dark.text};
+      background: ${({ theme }) => theme.dark.primary.red};
+    }
   }
 
   .companyImage {
@@ -130,6 +150,53 @@ const StyledCertificateCard = styled.div`
 
       .seperator {
         font-size: 0.6rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    width: 100%;
+
+    .companyImage {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .certDetail {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    width: 100%;
+    flex-direction: column;
+
+    .companyImage {
+      width: 100%;
+      display: flex;
+      height: 10rem;
+      place-items: center;
+      justify-content: center;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .certDetail {
+      width: 100%;
+      padding: 1rem;
+
+      .id,
+      .see {
+        font-size: 0.8rem;
+      }
+
+      .dates {
+        width: 100%;
+
+        .issued,
+        .expiry {
+          font-size: 0.8rem;
+        }
       }
     }
   }

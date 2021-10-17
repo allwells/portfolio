@@ -8,7 +8,7 @@ const theme = {
     secondary: "#222222",
     headingBg: "#252525",
     tertiary: "#444444",
-    border: "#333333",
+    border: "#2a2a2a",
     text: "#e5e5e5",
     text2: "#656565",
     text3: "#757575",
@@ -21,12 +21,13 @@ const theme = {
       php: "#4f5d95",
       shell: "#89e051",
       r: "#198ce7",
+      mysql: "#dc8600",
     },
   },
-  screenSize: {
-    tablet: "760px",
-    ipad: "860px",
-    iphonex: "460px",
+  screen: {
+    tab: "1024px",
+    ipad: "768px",
+    mobile: "425px",
   },
 };
 

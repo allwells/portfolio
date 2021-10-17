@@ -53,11 +53,16 @@ const StyledMainLayout = styled.div`
     ${({ theme }) => theme.dark.primary.red},
     purple
   );
+  transition-duration: 0.4s;
 
   main {
     flex: 1;
     display: flex;
     flex-direction: column;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    padding: 3%;
   }
 `;
 

@@ -44,7 +44,17 @@ const StyledSceneLayout = styled.div`
   justify-content: space-between;
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: ${({ theme }) => theme.dark.secondary};
-  box-shadow: 0 0 0.8rem ${({ theme }) => theme.dark.black};
+  border-top: 1px solid ${({ theme }) => theme.dark.text2};
+  border-left: 1px solid ${({ theme }) => theme.dark.text2};
+  border-right: 1px solid ${({ theme }) => theme.dark.text2};
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    border-radius: 1rem 1rem 0 0;
+  }
 `;
 
 export default SceneLayout;

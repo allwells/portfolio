@@ -87,6 +87,13 @@ const StyledHeading102 = styled.div`
   .line2 {
     width: 2.5rem;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.2rem;
+    }
+  }
 `;
 
 const StyledHeading201 = styled.div`

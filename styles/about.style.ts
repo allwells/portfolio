@@ -113,9 +113,9 @@ const StyledAbout = styled.div`
       display: flex;
       place-items: center;
       justify-content: center;
-      background: url(/profile.jpg);
+      background: url(/profile2.jpg);
       background-size: cover;
-      background-position: center;
+      background-position: top;
       background-repeat: no-repeat;
     }
   }
@@ -166,6 +166,128 @@ const StyledAbout = styled.div`
         display: flex;
         padding-right: 1rem;
         padding-bottom: 1rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    //-- -- -- ABOUT ME -- -- --
+    .aboutMe {
+      margin-top: 0;
+      flex-direction: column-reverse;
+
+      .left {
+        width: 100%;
+        margin-left: 0;
+        padding: 2.5rem 5%;
+        box-shadow: none;
+        background: none;
+
+        h4 {
+          font-size: 0.8rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+          line-height: 1.8;
+        }
+
+        #schoolLink {
+          padding: 0;
+          margin: 0 0.2rem;
+        }
+
+        .buttons {
+          margin-top: 1.5rem;
+
+          .downloadBtn,
+          .hireBtn {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+          }
+
+          .downloadBtn {
+            margin-right: 0.8rem;
+          }
+        }
+      }
+
+      .right {
+        width: 100%;
+        height: 34rem;
+        background: url(/profile2.jpg);
+        background-size: cover;
+        background-position: top;
+      }
+    }
+
+    //-- -- -- RESUME -- -- --
+    .resume {
+      flex-direction: column;
+
+      .education,
+      .experience {
+        width: 100%;
+      }
+    }
+
+    //-- -- -- CERTIFICATIONS -- -- --
+    .certifications {
+      width: 100%;
+
+      .certCards {
+        .cardItem {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    //-- -- -- ABOUT ME -- -- --
+    .aboutMe {
+      .right {
+        width: 100%;
+        height: 19rem;
+        background: url(/profile2.jpg);
+        background-size: cover;
+        background-position: top;
+      }
+    }
+
+    //-- -- -- RESUME -- -- --
+    .resume {
+      flex-direction: column;
+
+      .education,
+      .experience {
+        .cardHolder {
+          width: 100%;
+          display: flex;
+          margin-top: 2rem;
+          flex-direction: column;
+          place-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    //-- -- -- CERTIFICATIONS -- -- --
+    .certifications {
+      width: 100%;
+
+      .certCards {
+        width: 100%;
+
+        .cardItem {
+          width: 100%;
+        }
       }
     }
   }

@@ -15,6 +15,15 @@ const HomePage: React.FC<Props> = () => {
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="introHead">
+        <h4>Web Developer</h4>
+        <h1>
+          <span>allwell</span> onen
+        </h1>
+      </div>
+      <div className="right">
+        <div></div>
+      </div>
       <div className="left">
         <h4>Web Developer</h4>
         <h1>
@@ -32,9 +41,6 @@ const Hero = () => {
             Download CV
           </a>
         </Link>
-      </div>
-      <div className="right">
-        <div></div>
       </div>
     </div>
   );

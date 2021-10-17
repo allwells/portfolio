@@ -65,6 +65,37 @@ const StyledResumeCard = styled.div`
       color: ${({ theme }) => theme.dark.text2};
     }
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.05rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    div {
+      display: flex;
+      margin-bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        width: fit-content;
+        font-size: 0.7rem;
+      }
+
+      .company {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        font-size: 0.65rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
 `;
 
 export default ResumeCard;

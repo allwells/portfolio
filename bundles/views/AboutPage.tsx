@@ -124,6 +124,7 @@ const Certificate = () => {
             id="e23ed2be003a"
             url="https://www.hackerrank.com/certificates/e23ed2be003a"
             img="/mysql.svg"
+            label="mysql"
           />
         </li>
         <li className="cardItem">
@@ -136,6 +137,7 @@ const Certificate = () => {
             id="19951669-1068"
             url="https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png"
             img="/java.svg"
+            label="java"
           />
         </li>
       </ul>

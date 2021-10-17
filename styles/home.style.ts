@@ -13,6 +13,43 @@ const StyledHome = styled.div`
     margin: 6rem 0;
     place-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
+
+    .introHead {
+      width: 89%;
+      display: none;
+      margin-bottom: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      place-items: flex-start;
+
+      h1,
+      h4 {
+        display: block;
+      }
+
+      h4 {
+        margin: 0;
+        font-weight: 350;
+        font-size: 0.9rem;
+        letter-spacing: 0.08rem;
+        color: ${({ theme }) => theme.dark.text2};
+      }
+
+      h1 {
+        margin: 0;
+        font-weight: 300;
+        text-align: left;
+        font-size: 3.5rem;
+        letter-spacing: 0.04rem;
+        text-transform: capitalize;
+        color: ${({ theme }) => theme.dark.text};
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
 
     .left {
       width: 35%;
@@ -85,10 +122,77 @@ const StyledHome = styled.div`
         border-radius: 50%;
         background: url(/profile.jpg);
         background-size: cover;
+        transition-duration: 0.4s;
         background-position: center;
         background-repeat: no-repeat;
-        box-shadow: 0 0 1.5rem ${({ theme }) => theme.dark.black};
+        box-shadow: 0 0 0.6rem ${({ theme }) => theme.dark.black};
         border: 1.1rem solid ${({ theme }) => theme.dark.tertiary};
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    .hero {
+      margin: 3rem 0;
+      flex-direction: column;
+
+      .introHead {
+        display: flex;
+      }
+
+      h1,
+      h4 {
+        display: none;
+      }
+
+      .left {
+        width: 90%;
+        margin-top: 1rem;
+        place-items: center;
+        place-items: flex-start;
+      }
+
+      .right {
+        width: 100%;
+        place-items: center;
+
+        div {
+          width: 90%;
+          height: 26rem;
+          box-shadow: none;
+          place-items: center;
+          border-radius: 0.7rem;
+          border: 0.1rem solid ${({ theme }) => theme.dark.tertiary};
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    .hero {
+      .introHead {
+        h4 {
+          font-size: 0.8rem;
+        }
+
+        h1 {
+          margin: 0;
+          font-size: 2rem;
+        }
+      }
+
+      .left {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .right {
+        div {
+          height: 16rem;
+          background-image: url(/profile2.jpg);
+          background-position: top;
+        }
       }
     }
   }
