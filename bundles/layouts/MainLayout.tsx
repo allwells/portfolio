@@ -46,7 +46,6 @@ const StyledMainLayout = styled.div`
   height: 100%;
   display: flex;
   padding: 2.5rem;
-  font-family: nunito;
   flex-direction: column;
   background: linear-gradient(
     to bottom right,
