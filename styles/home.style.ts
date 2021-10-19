@@ -87,6 +87,7 @@ const StyledHome = styled.div`
       }
 
       p {
+        line-height: 1.5;
         font-weight: 350;
         font-size: 1.05rem;
         margin-bottom: 2rem;
