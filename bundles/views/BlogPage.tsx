@@ -1,7 +1,9 @@
 import Image from "next/image";
+import PreBlogPost from "../components/PreBlogPost";
 import React from "react";
 import StyledBlog from "../../styles/blog.style";
 import heading from "../components/Heading";
+import route from "../../pages/api/routes";
 
 export default function BlogPage() {
   return (
@@ -26,18 +28,12 @@ const SidePanel = () => {
           Developer. My stack is MERNstack.
         </p>
       </div>
-      {/* <div className="popularPost sidePanelChild">
+      <div className="popularPost sidePanelChild">
         <heading.Heading201 heading="Popular Post" />
         <div className="post">
           <p>Popular Post 1</p>
         </div>
-        <div className="post">
-          <p>Popular Post 2</p>
-        </div>
-        <div className="post">
-          <p>Popular Post 3</p>
-        </div>
-      </div> */}
+      </div>
       <div className="follow sidePanelChild">
         <heading.Heading201 heading="Follow Me" />
         <p>
@@ -76,5 +72,19 @@ const SidePanel = () => {
 };
 
 const MainPanel = () => {
-  return <div className="mainPanel"></div>;
+  return (
+    <ul className="blogPostPanel">
+      {route.blogs.map((blog) => {
+        return (
+          <PreBlogPost
+            key={blog.id}
+            title={blog.title}
+            img={blog.img}
+            description={blog.description}
+            date={blog.date}
+          />
+        );
+      })}
+    </ul>
+  );
 };

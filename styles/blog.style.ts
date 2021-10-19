@@ -7,6 +7,10 @@ const StyledBlog = styled.div`
     justify-content: space-between;
   }
 
+  // *::-webkit-scrollbar {
+  //   width: 0;
+  // }
+
   .sidePanel {
     width: 25%;
     display: flex;
@@ -21,6 +25,7 @@ const StyledBlog = styled.div`
       border-radius: 0.5rem;
       flex-direction: column;
       background: ${({ theme }) => theme.dark.black};
+      border: 1px solid ${({ theme }) => theme.dark.tertiary};
 
       div {
         margin-bottom: 1rem;
@@ -68,13 +73,16 @@ const StyledBlog = styled.div`
     }
   }
 
-  .mainPanel {
+  .blogPostPanel {
+    margin: 0;
     width: 75%;
-    height: auto;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
     padding: 1.5rem 0;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     padding-left: 1.5rem;
-    border: 1px solid purple;
+    justify-content: stretch;
   }
 `;
 
