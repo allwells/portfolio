@@ -3,7 +3,7 @@ import Link from "next/link";
 import PortfolioCard from "../components/PortfolioCard";
 import React from "react";
 import StyledPortfolio from "../../styles/portfolio.style";
-import profile from "../../pages/api/routes";
+import route from "../../pages/api/routes";
 
 export default function PortfolioPage() {
   return (
@@ -50,7 +50,7 @@ const Category = () => {
 const PortfolioContents = () => {
   return (
     <ul className="portfolioContents">
-      {profile.map((port) => {
+      {route.profile.map((port) => {
         return (
           <PortfolioCard
             link={port.link}
