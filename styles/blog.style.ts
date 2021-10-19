@@ -84,6 +84,28 @@ const StyledBlog = styled.div`
     padding-left: 1.5rem;
     justify-content: stretch;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    .sidePanel {
+      width: 65%;
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    .blogContents {
+      flex-direction: column;
+    }
+
+    .sidePanel {
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    .blogPostPanel {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
 `;
 
 export default StyledBlog;

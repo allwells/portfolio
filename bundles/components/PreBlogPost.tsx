@@ -98,6 +98,14 @@ const StyledPreBlogPost = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    width: 100%;
+  }
 `;
 
 export default BlogPost;
