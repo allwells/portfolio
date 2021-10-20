@@ -38,9 +38,9 @@ const SidePanel = () => {
               return (
                 <>
                   <p className="popTitle">{post.title}</p>
-                  {/* <p className="popDate">
+                  <p className="popDate">
                     Date posted: <i>{post.date}</i>
-                  </p> */}
+                  </p>
                 </>
               );
             }

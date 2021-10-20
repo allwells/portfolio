@@ -60,6 +60,7 @@ const StyledPreBlogPost = styled.div`
   }
 
   h2 {
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 

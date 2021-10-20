@@ -52,10 +52,15 @@ const StyledBlog = styled.div`
         background: ${({ theme }) => theme.dark.headingBg};
 
         .popTitle {
+          margin: 0;
+          cursor: pointer;
+          padding: 0.5rem 0;
           font-size: 0.9rem;
+          border-bottom: 1px solid ${({ theme }) => theme.dark.border};
         }
 
         .popDate {
+          cursor: default;
           font-size: 0.7rem;
           color: ${({ theme }) => theme.dark.text2};
         }

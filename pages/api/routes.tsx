@@ -47,7 +47,7 @@ const route = {
     },
     {
       id: 2,
-      title: "The Kotlin language",
+      title: "Kotlin programming language",
       img: "/profile.jpg",
       description: "Introduction to Kotlin for android development",
       date: "Jan 15, 2021",
