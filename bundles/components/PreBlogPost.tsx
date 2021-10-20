@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -8,9 +7,16 @@ interface Props {
   img: string;
   description: string;
   date: string;
+  showBlogPost: any;
 }
 
-const BlogPost: React.FC<Props> = ({ title, img, description, date }) => {
+const BlogPost: React.FC<Props> = ({
+  title,
+  img,
+  description,
+  date,
+  showBlogPost,
+}) => {
   return (
     <StyledPreBlogPost>
       <h2>{title}</h2>
@@ -20,7 +26,7 @@ const BlogPost: React.FC<Props> = ({ title, img, description, date }) => {
         <h5>
           <i>{date}</i>
         </h5>
-        <button>Read</button>
+        <button onClick={showBlogPost}>Read</button>
       </div>
     </StyledPreBlogPost>
   );

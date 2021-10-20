@@ -47,9 +47,18 @@ const StyledBlog = styled.div`
 
     .popularPost {
       .post {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
         border-radius: 0.2rem;
         background: ${({ theme }) => theme.dark.headingBg};
+
+        .popTitle {
+          font-size: 0.9rem;
+        }
+
+        .popDate {
+          font-size: 0.7rem;
+          color: ${({ theme }) => theme.dark.text2};
+        }
       }
     }
 
@@ -76,11 +85,10 @@ const StyledBlog = styled.div`
   .blogPostPanel {
     margin: 0;
     width: 75%;
-    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     padding: 1.5rem 0;
-    // overflow-y: scroll;
+    height: fit-content;
     padding-left: 1.5rem;
     justify-content: stretch;
   }

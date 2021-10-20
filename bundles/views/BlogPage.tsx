@@ -18,6 +18,8 @@ export default function BlogPage() {
 }
 
 const SidePanel = () => {
+  const maxLikes = Math.max(...route.blogs.map((like) => like.likes));
+
   return (
     <div className="sidePanel">
       <div className="aboutMe sidePanelChild">
@@ -31,7 +33,18 @@ const SidePanel = () => {
       <div className="popularPost sidePanelChild">
         <heading.Heading201 heading="Popular Post" />
         <div className="post">
-          <p>Popular Post 1</p>
+          {route.blogs.map((post) => {
+            if (post.likes === maxLikes) {
+              return (
+                <>
+                  <p className="popTitle">{post.title}</p>
+                  {/* <p className="popDate">
+                    Date posted: <i>{post.date}</i>
+                  </p> */}
+                </>
+              );
+            }
+          })}
         </div>
       </div>
       <div className="follow sidePanelChild">
@@ -82,6 +95,7 @@ const MainPanel = () => {
             img={blog.img}
             description={blog.description}
             date={blog.date}
+            showBlogPost={undefined}
           />
         );
       })}
