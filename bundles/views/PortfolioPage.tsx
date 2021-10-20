@@ -53,6 +53,7 @@ const PortfolioContents = () => {
       {route.profile.map((port) => {
         return (
           <PortfolioCard
+            key={port.id}
             link={port.link}
             label={port.label}
             img={port.img}

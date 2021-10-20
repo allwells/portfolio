@@ -57,6 +57,9 @@ const StyledBlog = styled.div`
           padding: 0.5rem 0;
           font-size: 0.9rem;
           border-bottom: 1px solid ${({ theme }) => theme.dark.border};
+
+          &:hover {
+          }
         }
 
         .popDate {
