@@ -29,10 +29,10 @@ const ServiceCard = ({
 
 const StyledServiceCard = styled.li`
   width: 20rem;
-  height: 20rem;
   padding: 2rem;
   display: flex;
   margin: 0.9rem;
+  min-height: 20rem;
   place-items: center;
   border-radius: 0.5rem;
   flex-direction: column;
