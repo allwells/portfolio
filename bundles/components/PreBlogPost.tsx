@@ -33,8 +33,8 @@ const BlogPost: React.FC<Props> = ({
 };
 
 const StyledPreBlogPost = styled.div`
-  width: 17rem;
   display: flex;
+  width: 17.5rem;
   margin: 0 0.8rem;
   height: fit-content;
   padding: 2rem 1.5rem;
@@ -42,13 +42,9 @@ const StyledPreBlogPost = styled.div`
   margin-bottom: 1.5rem;
   flex-direction: column;
   transition-duration: 0.5s;
-  background: ${({ theme }) => theme.dark.black};
+  background: ${({ theme }) => theme.dark.headingBg};
   border: 1px solid ${({ theme }) => theme.dark.tertiary};
-  box-shadow: 0.2rem 0.2rem 0.2rem ${({ theme }) => theme.dark.black};
-
-  &:hover {
-    box-shadow: 0.2rem 0.2rem 1rem ${({ theme }) => theme.dark.black};
-  }
+  box-shadow: 0.2rem 0.2rem 0.4rem ${({ theme }) => theme.dark.black};
 
   h2,
   h4,
