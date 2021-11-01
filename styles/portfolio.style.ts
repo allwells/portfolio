@@ -18,12 +18,23 @@ const StyledPortfolio = styled.div`
       margin: 0.8rem 1.5rem;
       color: ${({ theme }) => theme.dark.text2};
 
-      a {
+      button {
+        padding: 0;
+        border: none;
+        outline: none;
         font-weight: 600;
+        background: none;
+        font-size: 0.9rem;
+        width: fit-content;
+        height: fit-content;
+        font-family: inherit;
         transition-duration: 0.3s;
+        text-transform: capitalize;
+        color: ${({ theme }) => theme.dark.text};
 
         &:hover {
-          color: ${({ theme }) => theme.dark.text};
+          cursor: pointer;
+          color: ${({ theme }) => theme.dark.primary.red};
         }
       }
     }
@@ -50,12 +61,26 @@ const StyledPortfolio = styled.div`
     .portfolioContents {
       justify-content: center;
       li {
+        width: 80%;
+        margin-bottom: 3rem;
+
+        a {
+          width: 100%;
+        }
       }
     }
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
     .portfolioContents {
+      li {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 `;

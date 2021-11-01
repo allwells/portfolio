@@ -1,65 +1,86 @@
 import Heading from "../components/Heading";
-import Link from "next/link";
 import PortfolioCard from "../components/PortfolioCard";
 import React from "react";
 import StyledPortfolio from "../../styles/portfolio.style";
 import route from "../../pages/api/routes";
 
 export default function PortfolioPage() {
+  const [project, setProject] = React.useState([]);
+  const [filter, setFilter] = React.useState("");
+  const itemName = [
+    { name: "all" },
+    { name: "java" },
+    { name: "python" },
+    { name: "typescript" },
+    { name: "javascript" },
+  ];
+
+  React.useEffect(() => {
+    return setProject(route.profile);
+  }, []);
+
+  const handleTabClick = (tabName: string) => {
+    return setFilter(tabName);
+  };
+
   return (
     <StyledPortfolio>
       <Heading.Heading102 heading="Portfolio" />
-      <Category />
-      <PortfolioContents />
+      <TabItems itemName={itemName} handleTabClick={handleTabClick} />
+      <Projects filter={filter} project={project} />
     </StyledPortfolio>
   );
 }
 
-const Category = () => {
+const TabItems = ({ itemName, handleTabClick }) => {
   return (
     <ul className="category">
-      <li>
-        <Link href="#all" passHref>
-          <a className="all">All</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#java" passHref>
-          <a className="java">Java</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#python" passHref>
-          <a className="python">Python</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#typescript" passHref>
-          <a className="typescript">Typescript</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#javascript" passHref>
-          <a className="javascript">Javascript</a>
-        </Link>
-      </li>
+      {itemName.map((item: any) => {
+        return (
+          <li key={item.name}>
+            <button onClick={() => handleTabClick(item.name)}>
+              {item.name}
+            </button>
+          </li>
+        );
+      })}
     </ul>
   );
 };
 
-const PortfolioContents = () => {
+const Projects = ({ filter, project }) => {
+  if (filter === "" || filter === "all") {
+    return (
+      <ul className="portfolioContents">
+        {project.map((data: any) => {
+          return (
+            <PortfolioCard
+              key={data.id}
+              link={data.link}
+              label={data.label}
+              img={data.img}
+              name={data.name}
+            />
+          );
+        })}
+      </ul>
+    );
+  }
+
   return (
     <ul className="portfolioContents">
-      {route.profile.map((port) => {
-        return (
-          <PortfolioCard
-            key={port.id}
-            link={port.link}
-            label={port.label}
-            img={port.img}
-            name={port.name}
-          />
-        );
+      {project.map((data: any) => {
+        if (data.label === filter) {
+          return (
+            <PortfolioCard
+              key={data.id}
+              link={data.link}
+              label={data.label}
+              img={data.img}
+              name={data.name}
+            />
+          );
+        }
       })}
     </ul>
   );

@@ -1,23 +1,20 @@
 import Image from "next/image";
-import Link from "next/link";
 import styled from "styled-components";
 
-interface Props {
+interface PorfolioCardProps {
   link: string;
   label: string;
   img: string;
   name: string;
 }
 
-const PortfolioCard = ({ link, label, img, name }) => {
+const PortfolioCard = ({ link, label, img, name }: PorfolioCardProps) => {
   return (
     <StyledPortfolioCard>
-      <a href={link} target="_blank">
+      <a id="link" href={link} target="_blank">
         <label>{label}</label>
-        <Image src={img} width={580} height={400} alt="portfolio" />
-        <p>
-          <span>{name}</span>
-        </p>
+        <Image id="zoom" src={img} width={380} height={300} alt={"portfolio"} />
+        <span id="title">{name}</span>
       </a>
     </StyledPortfolioCard>
   );
@@ -25,16 +22,19 @@ const PortfolioCard = ({ link, label, img, name }) => {
 
 const StyledPortfolioCard = styled.li`
   margin: 0.5rem;
+  overflow: hidden;
   width: fit-content;
   border-radius: 0.7rem;
-  transition-duration: 0.5s;
+  border: 1px solid ${({ theme }) => theme.dark.tertiary};
 
-  &:hover {
-    box-shadow: 0 0 0.8rem ${({ theme }) => theme.dark.black};
+  * {
+    transition-duration: 0.5s;
   }
 
-  img:hover ~ li {
-    background: ${({ theme }) => theme.dark.black};
+  #zoom {
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 
   a {
@@ -58,7 +58,7 @@ const StyledPortfolioCard = styled.li`
     background: ${({ theme }) => theme.dark.primary.red};
   }
 
-  p {
+  span {
     margin: 0;
     z-index: 1;
     height: 3rem;
@@ -66,6 +66,7 @@ const StyledPortfolioCard = styled.li`
     margin-top: -3rem;
     place-items: center;
     justify-content: center;
+    transition-duration: 0.3s;
     border-radius: 0 0 0.7rem 0.7rem;
     color: ${({ theme }) => theme.dark.text};
     background: ${({ theme }) => theme.dark.black + "bb"};

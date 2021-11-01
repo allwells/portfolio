@@ -5,7 +5,7 @@ const route = {
       label: "typescript",
       img: "/portfolio-preview.png",
       link: "https://allwells.vercel.app",
-      name: "Portfilio",
+      name: "This site",
     },
     {
       id: 2,
@@ -16,17 +16,17 @@ const route = {
     },
     {
       id: 3,
-      label: "javascript",
-      img: "/profile.jpg",
-      link: "https://allwells.vercel.app",
-      name: "Blog App",
+      label: "typescript",
+      img: "/renic.png",
+      link: "https://renic.vercel.app",
+      name: "Renic Branding",
     },
     {
       id: 4,
       label: "javascript",
-      img: "/cert-icon.png",
-      link: "https://allwells.vercel.app",
-      name: "Official Task Manager",
+      img: "/unique.png",
+      link: "https://unique.vercel.app",
+      name: "Unique-Gift Amah's Portfolio",
     },
     {
       id: 5,
