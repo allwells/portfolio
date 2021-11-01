@@ -44,6 +44,7 @@ const route = {
       description: "Introduction to web application with React.",
       date: "Dec 23, 2020",
       likes: 23,
+      blog: "",
     },
     {
       id: 2,
@@ -52,6 +53,7 @@ const route = {
       description: "Introduction to Kotlin for android development",
       date: "Jan 15, 2021",
       likes: 53,
+      blog: "",
     },
     {
       id: 3,
@@ -60,6 +62,7 @@ const route = {
       description: "Introduction to Web application with Next.",
       date: "May 18, 2021",
       likes: 47,
+      blog: "",
     },
     {
       id: 4,
@@ -68,6 +71,7 @@ const route = {
       description: "Creating a simple Nodejs application.",
       date: "Sept 9, 2021",
       likes: 29,
+      blog: "",
     },
     {
       id: 5,
@@ -76,6 +80,30 @@ const route = {
       description: "Build a simple CRUD android application with Java.",
       date: "Oct 19, 2021",
       likes: 91,
+      blog: "",
+    },
+  ],
+  services: [
+    {
+      id: 1,
+      img: "/frontend.svg",
+      name: "Frontend Web Development",
+      description:
+        "I like building cool web page and it's like a magic to turn your imagination into reality.",
+    },
+    {
+      id: 2,
+      img: "/backend.svg",
+      name: "Backend Web Development",
+      description:
+        "I like building cool web page and it's like a magic to turn your imagination into reality.",
+    },
+    {
+      id: 3,
+      img: "/desktop.svg",
+      name: "Desktop App Development",
+      description:
+        "I build desktop applications like, database management systems.",
     },
   ],
 };
