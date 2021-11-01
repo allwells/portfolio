@@ -7,10 +7,15 @@ export default function Footer() {
     <StyledFooter>
       <ul className="social">
         <li>
+          <a href="https://t.me/allwells" target="_blank">
+            Telegram
+          </a>
+        </li>
+        {/* <li>
           <a href="https://facebook.com/allwells.official" target="_blank">
             Facebook
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="https://instagram.com/allwells_official" target="_blank">
             Instagram
