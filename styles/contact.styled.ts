@@ -24,8 +24,8 @@ const StyledContact = styled.div`
     }
 
     img {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 1.8rem;
+      height: 1.8rem;
     }
 
     span {
@@ -111,7 +111,6 @@ const StyledContact = styled.div`
       font-size: 0.9rem;
       border-radius: 2rem;
       font-family: inherit;
-      padding: 0.5rem 1.5rem;
       letter-spacing: 0.04rem;
       transition-duration: 0.5s;
       color: ${({ theme }) => theme.dark.text};
@@ -122,6 +121,41 @@ const StyledContact = styled.div`
       &:hover {
         background: ${({ theme }) => theme.dark.primary.red};
       }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
+    .contact {
+      place-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .contactInfo,
+    form {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    .container {
+      place-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .inputs,
+      .message {
+        width: 100%;
+      }
+
+      input {
+        margin-bottom: 1rem;
+      }
+    }
+
+    #submit {
+      width: 100%;
     }
   }
 `;

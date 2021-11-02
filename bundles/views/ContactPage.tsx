@@ -35,7 +35,12 @@ const ContactForm = ({ submitForm }: FormProps) => {
           <textarea placeholder="Message" cols={30} rows={10}></textarea>
         </div>
       </div>
-      <input className="submitButton" type="submit" value="Send Message" />
+      <input
+        className="submitButton"
+        id="submit"
+        type="submit"
+        value="Send Message"
+      />
     </form>
   );
 };
@@ -44,13 +49,13 @@ const ContactInfo = () => {
   return (
     <div className="contactInfo">
       <div>
-        <img src="/desktop.svg" alt="contact-icon" />
+        <img src="/phone.svg" alt="phone-icon" />
         <span>
           <a href="tel:+2348023495323">(+234) 802-349-5323</a>
         </span>
       </div>
       <div>
-        <img src="/desktop.svg" alt="contact-icon" />
+        <img src="/telegram.svg" alt="telegram-icon" />
         <span>
           <a
             href="http://t.me/allwells"
@@ -62,11 +67,11 @@ const ContactInfo = () => {
         </span>
       </div>
       <div>
-        <img src="/desktop.svg" alt="contact-icon" />
+        <img src="/location.svg" alt="location-icon" />
         <span>Lagos, Nigeria</span>
       </div>
       <div>
-        <img src="/desktop.svg" alt="contact-icon" />
+        <img src="/mail.svg" alt="mail-icon" />
         <span>
           <a href="mailto:aleenfestus@gmail.com">aleenfestus@gmail.com</a>
         </span>
