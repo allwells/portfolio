@@ -60,6 +60,7 @@ const StyledServiceCard = styled.li`
 
   span {
     display: flex;
+    line-height: 1.5;
     font-size: 0.85rem;
     text-align: center;
     letter-spacing: 0.07rem;
