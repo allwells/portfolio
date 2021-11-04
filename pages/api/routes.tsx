@@ -89,14 +89,14 @@ const route = {
       img: "/frontend.svg",
       name: "Frontend Web Development",
       description:
-        "I like building cool web page and it's like a magic to turn your imagination into reality.",
+        "Frontend development is very crucial as it is the interactive point for a visitor.",
     },
     {
       id: 2,
       img: "/backend.svg",
       name: "Backend Web Development",
       description:
-        "I like building cool web page and it's like a magic to turn your imagination into reality.",
+        "Backend of an app is very important when it concerns the security of data online.",
     },
     {
       id: 3,

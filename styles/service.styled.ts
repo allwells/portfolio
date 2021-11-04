@@ -15,7 +15,6 @@ const StyledService = styled.div`
     }
 
     @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
-      padding: 0.5rem;
       justify-content: center;
     }
   }
