@@ -21,18 +21,20 @@ const ServicePage = () => {
 
 const ServiceContent = ({ services }) => {
   return (
-    <ul className="content">
-      {services.map((service: any) => {
-        return (
-          <ServiceCard
-            key={service.id}
-            serviceImg={service.img}
-            serviceName={service.name}
-            serviceDescription={service.description}
-          />
-        );
-      })}
-    </ul>
+    <div className="services">
+      <ul className="content">
+        {services.map((service: any) => {
+          return (
+            <ServiceCard
+              key={service.id}
+              serviceImg={service.img}
+              serviceName={service.name}
+              serviceDescription={service.description}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 };
 
