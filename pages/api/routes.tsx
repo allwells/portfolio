@@ -5,36 +5,36 @@ const route = {
       label: "typescript",
       img: "/portfolio-preview.png",
       link: "https://allwells.vercel.app",
-      name: "This site",
+      name: "This site"
     },
     {
       id: 2,
       label: "java",
       img: "/profile.jpg",
       link: "https://allwells.vercel.app",
-      name: "Hospital Management System",
+      name: "Hospital Management System"
     },
     {
       id: 3,
       label: "typescript",
       img: "/renic.png",
       link: "https://renic.vercel.app",
-      name: "Renic Branding",
+      name: "Renic Branding"
     },
     {
       id: 4,
       label: "javascript",
       img: "/unique.png",
       link: "https://unique.vercel.app",
-      name: "Unique-Gift Amah's Portfolio",
+      name: "Unique-Gift Amah's Portfolio"
     },
     {
       id: 5,
       label: "javascript",
       img: "/portfolio-preview.png",
       link: "https://allwells.vercel.app",
-      name: "Notes App",
-    },
+      name: "Notes App"
+    }
   ],
   blogs: [
     {
@@ -44,7 +44,7 @@ const route = {
       description: "Introduction to web application with React.",
       date: "Dec 23, 2020",
       likes: 23,
-      blog: "",
+      blog: ""
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ const route = {
       description: "Introduction to Kotlin for android development",
       date: "Jan 15, 2021",
       likes: 53,
-      blog: "",
+      blog: ""
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ const route = {
       description: "Introduction to Web application with Next.",
       date: "May 18, 2021",
       likes: 47,
-      blog: "",
+      blog: ""
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ const route = {
       description: "Creating a simple Nodejs application.",
       date: "Sept 9, 2021",
       likes: 29,
-      blog: "",
+      blog: ""
     },
     {
       id: 5,
@@ -80,8 +80,8 @@ const route = {
       description: "Build a simple CRUD android application with Java.",
       date: "Oct 19, 2021",
       likes: 91,
-      blog: "",
-    },
+      blog: ""
+    }
   ],
   services: [
     {
@@ -89,23 +89,58 @@ const route = {
       img: "/frontend.svg",
       name: "Frontend Web Development",
       description:
-        "Frontend development is very crucial as it is the interactive point for a visitor.",
+        "Frontend development is very crucial as it is the interactive point for a visitor."
     },
     {
       id: 2,
       img: "/backend.svg",
       name: "Backend Web Development",
       description:
-        "Backend of an app is very important when it concerns the security of data online.",
+        "Backend of an app is very important when it concerns the security of data online."
     },
     {
       id: 3,
       img: "/desktop.svg",
       name: "Desktop App Development",
       description:
-        "I build desktop applications like, database management systems.",
-    },
+        "I build desktop applications like, database management systems."
+    }
   ],
+  education: [
+    {
+      id: 1,
+      year: "2001 - 2005",
+      school: "New Covenant Group of Schools",
+      educationType: "Kindagarten",
+      description:
+        "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+    },
+    {
+      id: 2,
+      year: "2006 - 2010",
+      school: "New Covenant Group of Schools",
+      educationType: "Primary Education",
+      description:
+        "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+    },
+    {
+      id: 3,
+      year: "2011 - 2016",
+      school: "Science and Arts Specialist College",
+      educationType: "Secondary Education",
+      description:
+        "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+    },
+    {
+      id: 4,
+      year: "2019 - Present",
+      school: "Anchor University",
+      educationType: "University/Tertiary Education",
+      description:
+        "Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna."
+    }
+  ],
+  work: []
 };
 
 export default route;
