@@ -40,9 +40,16 @@ const StyledPortfolio = styled.div`
     }
   }
 
+  .portCon {
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+  }
+
   .portfolioContents {
+    width: 77%;
     padding: 0;
-    padding: 0 3%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;

@@ -32,11 +32,11 @@ const AboutMe = () => {
             <a id="schoolLink" href="https://aul.edu.ng" target="_blank">
               Anchor University
             </a>
-            . I am a passionate and dedicated Fullstack Web Developer. My stack
-            is MERNstack. I started this journey in September 2020. Before then
-            I already had my hands on Java for software development, not
-            including web applications. I worked with Java for a year and some
-            months and decided to spice things up hence my journey with react.
+            . I am a passionate and dedicated Web Developer. I started this
+            journey in September 2020. Before then I already had my hands on
+            Java for software development, not including web applications. I
+            worked with Java for a year and some months and decided to spice
+            things up hence my journey with react.
           </p>
 
           <div className="buttons">

@@ -12,7 +12,7 @@ export default function PortfolioPage() {
     { name: "java" },
     { name: "python" },
     { name: "typescript" },
-    { name: "javascript" },
+    { name: "javascript" }
   ];
 
   React.useEffect(() => {
@@ -51,37 +51,41 @@ const TabItems = ({ itemName, handleTabClick }) => {
 const Projects = ({ filter, project }) => {
   if (filter === "" || filter === "all") {
     return (
-      <ul className="portfolioContents">
-        {project.map((data: any) => {
-          return (
-            <PortfolioCard
-              key={data.id}
-              link={data.link}
-              label={data.label}
-              img={data.img}
-              name={data.name}
-            />
-          );
-        })}
-      </ul>
+      <div className="portCon">
+        <ul className="portfolioContents">
+          {project.map((data: any) => {
+            return (
+              <PortfolioCard
+                key={data.id}
+                link={data.link}
+                label={data.label}
+                img={data.img}
+                name={data.name}
+              />
+            );
+          })}
+        </ul>
+      </div>
     );
   }
 
   return (
-    <ul className="portfolioContents">
-      {project.map((data: any) => {
-        if (data.label === filter) {
-          return (
-            <PortfolioCard
-              key={data.id}
-              link={data.link}
-              label={data.label}
-              img={data.img}
-              name={data.name}
-            />
-          );
-        }
-      })}
-    </ul>
+    <div className="portCon">
+      <ul className="portfolioContents">
+        {project.map((data: any) => {
+          if (data.label === filter) {
+            return (
+              <PortfolioCard
+                key={data.id}
+                link={data.link}
+                label={data.label}
+                img={data.img}
+                name={data.name}
+              />
+            );
+          }
+        })}
+      </ul>
+    </div>
   );
 };
