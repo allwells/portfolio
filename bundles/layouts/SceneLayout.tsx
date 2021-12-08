@@ -53,7 +53,7 @@ const StyledSceneLayout = styled.div`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 0;
   }
 `;
 

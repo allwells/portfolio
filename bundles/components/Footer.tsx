@@ -102,7 +102,7 @@ const StyledFooter = styled.footer`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0;
 
     ul {
       flex-wrap: wrap;

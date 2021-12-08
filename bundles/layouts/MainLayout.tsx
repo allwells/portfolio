@@ -64,6 +64,10 @@ const StyledMainLayout = styled.div`
   @media only screen and (max-width: ${({ theme }) => theme.screen.tab}) {
     padding: 3%;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.screen.mobile}) {
+    padding: 0;
+  }
 `;
 
 export default MainLayout;
