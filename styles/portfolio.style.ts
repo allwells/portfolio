@@ -52,6 +52,7 @@ const StyledPortfolio = styled.div`
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    min-height: 30vh;
     list-style: none;
     margin-bottom: 3rem;
 
