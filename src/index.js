@@ -1,5 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+import "./styles/Index.style.css";
 
 import App from "./App";
 import React from "react";

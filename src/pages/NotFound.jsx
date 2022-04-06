@@ -1,8 +1,8 @@
-import "./NotFound.style.css";
+import "../styles/NotFound.style.css";
 
 import { Button } from "@mantine/core";
 import React from "react";
-import notFound from "./page-not-found.png";
+import notFound from "../img/page-not-found.png";
 import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {

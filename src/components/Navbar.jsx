@@ -1,4 +1,4 @@
-import "./NavBar.css";
+import "../styles/Navbar.style.css";
 
 import { Burger, Button } from "@mantine/core";
 import { Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
