@@ -1,0 +1,126 @@
+* {
+  font-family: Ubuntu;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  min-height: 85vh;
+  place-items: center;
+  flex-direction: column;
+}
+
+.home-container .no-post {
+  font-size: 1.2rem;
+}
+
+.home-container .main-heading {
+  margin: 0;
+  color: #368dd6;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-right: 1rem;
+}
+
+.home-container .container {
+  margin: 0;
+  width: 50%;
+  display: flex;
+  padding-top: 3vh;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-container .container .explore #selectForm {
+  margin: 0;
+}
+
+.home-container .container .explore {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  place-items: center;
+  justify-content: center;
+}
+
+.home-container .container .no-explore,
+.home-container .no-post {
+  display: none;
+}
+
+.home-container .loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container .latest-news {
+  width: 79%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.home-container .latest-news .news-card:nth-of-type(1) {
+  flex-grow: 4;
+}
+
+.home-container .explore .resetCategory {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #1111;
+  transition-duration: 0.4s;
+  background-color: #f5f5f5;
+}
+
+.home-container .explore .resetCategory:hover {
+  background-color: #d5d5d5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-container .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container .latest-news {
+    width: 90%;
+  }
+
+  .home-container .container {
+    width: 100%;
+  }
+
+  .home-container .blog-card {
+    width: 100%;
+  }
+
+  .home-container .container .explore {
+    width: 100%;
+    flex-direction: column;
+    place-items: flex-start;
+  }
+
+  .home-container .container .explore h1 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .home-container .container .explore div {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
