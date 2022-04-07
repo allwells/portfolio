@@ -1,0 +1,92 @@
+.hero-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-image: url("../img/dark-leaves.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-container .bg-tint {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0004;
+}
+
+.hero-container .bg-tint .intro-text {
+  color: #fff;
+  display: flex;
+  padding: 4rem 2rem;
+  place-items: center;
+  border-radius: 10px;
+  margin: 5% 20% 0 20%;
+  justify-content: center;
+  background-color: #333a;
+}
+
+.hero-container .bg-tint .intro-text .left {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+.hero-container .bg-tint .intro-text .right {
+  width: 50%;
+  /* border: 1px solid green; */
+}
+
+.hero-container .bg-tint .intro-text .right p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.hero-container .bg-tint .intro-text .right .welcome-text {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-container .bg-tint .intro-text .right .bio {
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+}
+
+@media only screen and (max-width: 830px) {
+  .hero-container .bg-tint .intro-text {
+    margin: 10% 15%;
+    padding: 5rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .hero-container {
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-container .bg-tint .intro-text .right {
+    margin: 8% 10%;
+    padding: 4rem 2rem;
+  }
+
+  .hero-container .bg-tint .intro-text .right p {
+    font-size: 0.9rem;
+  }
+
+  .hero-container .bg-tint .intro-text .right .welcome-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-container .bg-tint .intro-text .right {
+    margin: 7% 4%;
+    margin-top: 10%;
+    padding: 4rem 2rem;
+  }
+}

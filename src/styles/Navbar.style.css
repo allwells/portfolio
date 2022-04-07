@@ -1,142 +1,92 @@
 * {
-  font-family: "Ubuntu", sans-serif;
+  transition-duration: 0.7s;
 }
 
-.navbar {
-  margin-bottom: 1vh;
-  background-color: #fff;
-  box-shadow: 0 3px 10px #2222;
-}
-
-.navbar .container .navbar-brand {
-  cursor: pointer;
-  color: #368dd6;
-  font-style: italic;
-  font-weight: bolder;
-}
-
-.navbar .container .navbar-collapse {
+.navbar-container {
   width: 100%;
-  flex-grow: 0;
-  justify-content: space-between;
-}
-
-.navbar .container .navbar-collapse .searchBar {
-  width: 90%;
-  height: 2.3rem;
-}
-
-.navbar .container .navbar-collapse .searchBar form {
-  width: 100%;
-}
-
-.navbar .container .navbar-collapse form input {
-  width: 18vw;
-  color: #333;
-  margin-left: 2vw;
-  font-size: 0.9rem;
-  border-right: none;
-  background-color: #fff;
-  border-radius: 20px 0 0 20px;
-  border-top: 1px solid #3336;
-  border-left: 1px solid #3336;
-  border-bottom: 1px solid #3336;
-}
-
-.navbar .container .navbar-collapse form input:focus {
-  outline: none;
-  box-shadow: none;
-  border-right: none;
-  border-top: 1px solid #368dd6aa;
-  border-left: 1px solid #368dd6aa;
-  border-bottom: 1px solid #368dd6aa;
-}
-
-.navbar .container .navbar-collapse .searchBar form .search-button {
-  height: 2.3rem;
-  padding: 0.45rem;
-  border-radius: 50%;
-  border-left: none;
-  margin-left: -0.6rem;
-  transition-duration: 0.3s;
-  background-color: #ffffff;
-  border-radius: 0 20px 20px 0;
-  border-top: 1px solid #3336;
-  border-right: 1px solid #3336;
-  border-bottom: 1px solid #3336;
-}
-
-.navbar .container .navbar-collapse form input:focus ~ .search-button {
-  border-left: none;
-  border-top: 1px solid #368dd6aa;
-  border-right: 1px solid #368dd6aa;
-  border-bottom: 1px solid #368dd6aa;
-}
-
-.navbar .container .navbar-collapse .new-post {
-  width: 100%;
-  border: none;
-  font-size: 0.8rem;
-  margin-right: 1vw;
-  border-radius: 4px;
-  background-color: #368dd6;
-}
-
-.navbar .container .navbar-collapse a {
+  height: auto;
   display: flex;
-  font-size: 0.8rem;
   place-items: center;
   justify-content: center;
 }
 
-.navbar .container .navbar-collapse .new-post:hover {
-  background-color: #146bb4;
-}
-
-.navbar .container .navbar-collapse .user-icon {
-  border-radius: 50%;
-  background-color: #2e2d2e;
-  border: 1px solid #111111;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar .container .navbar-collapse .user-icon:hover {
-  transform: scale(1.05);
-}
-
-.navbar .container .navbar-collapse .dropdown-toggle::after {
-  display: none;
-}
-
-.navbar .container .navbar-collapse .login-button {
+.navbar-container .navbar-border {
   width: 100%;
-  border: none;
+  height: auto;
+  display: flex;
+  margin-top: 2rem;
+  place-items: center;
+  justify-content: space-between;
+}
+
+.navbar-container .logo-area {
+  display: flex;
   color: #fff;
-  margin-left: 2rem;
-  font-size: 0.85rem;
-  border-radius: 50px;
-  background-color: #368dd6;
+  font-size: 1.5rem;
+  padding: 0.5rem 3%;
+  width: fit-content;
+  height: fit-content;
+  place-items: center;
+  padding-right: 0.6rem;
+  letter-spacing: 0.08rem;
+  border: 1px solid #444a;
+  background-color: #4449;
+  justify-content: flex-start;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 0;
 }
 
-.navbar .container .navbar-collapse .login-button:hover {
-  background-color: #146bb4;
+.navbar-container .logo-area .profile-name {
+  margin-right: 0.5rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar .container .navbar-collapse .searchBar {
-    width: 100%;
-    margin-top: 2rem;
+.navbar-container .logo-area .profile-name span {
+  font-weight: 700;
+}
+
+.navbar-container .navitem-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #444a;
+  justify-content: flex-end;
+  background-color: #4449;
+  border-top-left-radius: 10px;
+  padding: 1.2rem 5% 1.2rem 1rem;
+  border-bottom-left-radius: 10px;
+  border-right: 0;
+}
+
+.navbar-container .burger-container {
+  margin-right: 5%;
+  border-radius: 4px;
+  border: 1px solid #4449;
+  background-color: #444a;
+}
+
+.navbar-container .burger-container div,
+.navbar-container .burger-container div::before,
+.navbar-container .burger-container div::after {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 426px) {
+  .navbar-container .navbar-border {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #3336;
+    border: 1px solid #5556;
   }
 
-  .navbar .container .navbar-collapse .searchBar input {
-    margin-left: 0;
+  .navbar-container .logo-area {
+    border: none;
+    background-color: transparent;
   }
 
-  .navbar .container .navbar-collapse .login {
-    margin-top: 1rem;
-  }
-
-  .navbar .container .navbar-collapse .login-button {
-    margin: 0;
+  .navbar-container .logo-area .profile-name {
+    display: none;
   }
 }

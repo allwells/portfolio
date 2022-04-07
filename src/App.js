@@ -7,7 +7,7 @@ import React from "react";
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <AffiXx />
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,11 @@
+.logo-container {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: fit-content;
+  border-radius: 50%;
+  height: fit-content;
+  padding: 0.8rem 0.5rem;
+  border: 2px solid #fff;
+  background-color: #eee6;
+}
