@@ -2,15 +2,15 @@
   color: #fff;
   margin: 0 0.5rem;
   font-size: 0.9rem;
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 0.5rem 1rem;
   text-decoration: none;
   letter-spacing: 0.08rem;
   transition-duration: 0.5s;
-  border: 1px solid #eeeeee22;
-  background-color: #eeeeee11;
+  /* border: 1px solid #eeeeee22;
+  background-color: #eeeeee11; */
 }
 
 .navbar-link:hover {
-  background-color: #f5f5f533;
+  background-color: #f5f5f511;
 }

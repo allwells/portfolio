@@ -23,15 +23,49 @@ const Navbar = () => {
         <div className="logo-area">
           <div className="profile-name">
             <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
-              <span>Allwell</span> Onen
+              <span>allwell.o()</span>
             </Link>
           </div>
-          <Logo />
         </div>
 
         {/* Navbar Items */}
         {isLargeScreen ? (
           <div className="navitem-container">
+            {/* <SegmentedControl
+              size="md"
+              sx={{
+                backgroundColor: "transparent",
+              }}
+              data={[
+                {
+                  value: "about",
+                  label: (
+                    <Center>
+                      <InfoCircle size={16} />
+                      <Box ml={10}>About</Box>
+                    </Center>
+                  ),
+                },
+                {
+                  value: "portfolio",
+                  label: (
+                    <Center>
+                      <Code size={16} />
+                      <Box ml={10}>Portfolio</Box>
+                    </Center>
+                  ),
+                },
+                {
+                  value: "contact",
+                  label: (
+                    <Center>
+                      <FilePhone size={16} />
+                      <Box ml={10}>Contact</Box>
+                    </Center>
+                  ),
+                },
+              ]}
+            /> */}
             <Navlink route="/" text="Home" />
             <Navlink route="/about" text="About" />
             <Navlink route="/portfolio" text="Portfolio" />
