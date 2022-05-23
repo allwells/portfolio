@@ -4,12 +4,12 @@ export default function About() {
   return (
     <Layout
       title={"About"}
-      home={null}
-      work={null}
+      home={undefined}
+      work={undefined}
       about={"active"}
-      contact={null}
+      contact={undefined}
     >
-      <div className="px-5 sm:px-16 pt-16 sm:pt-20 pb-6 dark:text-neutral-200">
+      <div className="px-5 pt-16 pb-6 sm:px-16 sm:pt-20 dark:text-neutral-200">
         About Page
       </div>
     </Layout>

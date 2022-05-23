@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 
 interface LayoutProps {
   title: string;
-  home: string | null;
-  work: string | null;
-  about: string | null;
-  contact: string | null;
+  home: string | undefined;
+  work: string | undefined;
+  about: string | undefined;
+  contact: string | undefined;
   children: React.ReactNode;
 }
 
@@ -19,7 +19,7 @@ export default function Layout({
   contact,
 }: LayoutProps) {
   return (
-    <div className="dark min-h-screen">
+    <div className="min-h-screen dark">
       <Head>
         <title>Allwell Onen - {title}</title>
         <meta
@@ -29,7 +29,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar home={home} work={work} about={about} contact={contact} />
-      <main className="min-h-screen w-full bg-amber-50 dark:bg-neutral-900">
+      <main className="w-full min-h-screen bg-amber-50 dark:bg-neutral-900">
         {children}
       </main>
       {/* Footer */}
