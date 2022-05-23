@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 
 interface NavbarProps {
-  home: string | null;
-  work: string | null;
-  about: string | null;
-  contact: string | null;
+  home: string | null | undefined;
+  work: string | null | undefined;
+  about: string | null | undefined;
+  contact: string | null | undefined;
 }
 
 export default function Navbar({ home, work, about, contact }: NavbarProps) {
