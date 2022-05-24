@@ -20,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col-reverse items-center justify-start gap-4 md:flex-row md:justify-between md:items-start">
           <div className="w-full mt-4 mb-8 text-lg cursor-default md:w-3/5 md:mt-0 md:mb-0">
             <h1 className="mb-3 text-xl font-bold lg:text-3xl dark:text-neutral-50">
-              Hi! I'm Allwell Onen,
+              Hi! I&apos;m Allwell Onen,
             </h1>
             <p className="text-sm font-light tracking-wider lg:text-lg dark:text-neutral-300">
               a{" "}
