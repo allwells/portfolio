@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 
 interface LayoutProps {
   title: string;
-  home: string | undefined;
-  works: string | undefined;
-  about: string | undefined;
-  contact: string | undefined;
+  home?: string;
+  works?: string;
+  about?: string;
+  contact?: string;
   children: React.ReactNode;
 }
 

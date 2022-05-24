@@ -4,19 +4,19 @@ import Logo from "./Logo";
 import React from "react";
 
 interface NavbarProps {
-  home: string | undefined;
-  works: string | undefined;
-  about: string | undefined;
-  contact: string | undefined;
+  home?: string;
+  works?: string;
+  about?: string;
+  contact?: string;
 }
 
 interface NavLinkMobileProps {
-  id: string | undefined;
+  id?: string;
   page: string;
   route: string;
 }
 interface NavLinkDesktopProps {
-  id: string | undefined;
+  id?: string;
   page: string;
   route: string;
 }
