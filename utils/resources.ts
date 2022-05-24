@@ -27,7 +27,7 @@ const educations = [
 const skills = [
   {
     id: 0,
-    value: "HTML/CSS",
+    value: "HTML-CSS",
     theme: "dark:text-orange-600",
   },
   {
