@@ -6,7 +6,7 @@ import {
   ResumeHeading,
   SectionWrapper,
 } from "../utils/components";
-import { educations, hobbies, skills } from "./resources/resources";
+import { educations, hobbies, skills } from "../utils/resources";
 
 import Layout from "../components/Layout";
 import React from "react";
