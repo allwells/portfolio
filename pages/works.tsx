@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
 
-export default function Work() {
+export default function Works() {
   return (
     <Layout
       title={"Works"}
       home={undefined}
-      work={"active"}
+      works={"active"}
       about={undefined}
       contact={undefined}
     >

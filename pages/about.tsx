@@ -5,7 +5,7 @@ export default function About() {
     <Layout
       title={"About"}
       home={undefined}
-      work={undefined}
+      works={undefined}
       about={"active"}
       contact={undefined}
     >

@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 interface LayoutProps {
   title: string;
   home: string | undefined;
-  work: string | undefined;
+  works: string | undefined;
   about: string | undefined;
   contact: string | undefined;
   children: React.ReactNode;
@@ -14,7 +14,7 @@ export default function Layout({
   children,
   title,
   home,
-  work,
+  works,
   about,
   contact,
 }: LayoutProps) {
@@ -28,7 +28,7 @@ export default function Layout({
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar home={home} work={work} about={about} contact={contact} />
+      <Navbar home={home} works={works} about={about} contact={contact} />
       <main className="w-full min-h-screen bg-amber-50 dark:bg-neutral-900">
         {children}
       </main>

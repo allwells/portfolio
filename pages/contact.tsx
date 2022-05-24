@@ -5,7 +5,7 @@ export default function Contact() {
     <Layout
       title={"Contact"}
       home={undefined}
-      work={undefined}
+      works={undefined}
       about={undefined}
       contact={"active"}
     >
