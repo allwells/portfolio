@@ -5,7 +5,7 @@ import profile from "../public/profile.jpg";
 export default function Home() {
   // "https://api.lorem.space/image/fashion?w=1000&h=800"
   const profileBg = {
-    backgroundImage: `url("${profile}")`,
+    backgroundImage: `url(${profile})`,
   };
 
   return (
@@ -61,6 +61,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-// Hi! I'm Allwell Onen,
-// a [Fullstack Web Developer] with over 1+ years experience. I am focused on helping the company achieve short- and long-term goals as well as client satisfaction and event success.

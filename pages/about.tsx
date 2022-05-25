@@ -1,12 +1,13 @@
+import * as resource from "./api/resources";
+
 import {
-  Badge,
-  DetailsCard,
-  DutiesList,
-  EmploymentDuties,
-  ResumeHeading,
-  SectionWrapper,
-} from "../utils/components";
-import { educations, hobbies, skills } from "../utils/resources";
+  DetailsCardProps,
+  DutiesProps,
+  EmploymentDutiesProps,
+  ResumeBadgeProps,
+  ResumeHeadingProps,
+  SectionWrapperProps,
+} from "../utils/props";
 
 import Layout from "../components/Layout";
 import React from "react";
@@ -17,9 +18,9 @@ export default function About() {
   const [hobbieSet, setHobbieSet] = React.useState<any>([]);
 
   React.useEffect(() => {
-    setEducationDetails(educations.reverse());
-    setSkillSet(skills);
-    setHobbieSet(hobbies);
+    setEducationDetails(resource.educations.reverse());
+    setSkillSet(resource.skills);
+    setHobbieSet(resource.hobbies);
   }, []);
 
   return (
@@ -50,7 +51,7 @@ export default function About() {
 
             {/* resume - profile body */}
             <div className="w-full px-6">
-              <p className="leading-8 text-justify break-words dark:text-neutral-400 cursor-default">
+              <p className="leading-8 text-left break-words cursor-default dark:text-neutral-400">
                 Dedicated Fullstack Web Developer with over 1+ years experience
                 in frontend technologies:{" "}
                 <strong className="dark:text-neutral-50">React</strong>,{" "}
@@ -125,7 +126,7 @@ export default function About() {
             <ResumeHeading section={"skills"} />
 
             {/* resume - skills body */}
-            <div className="mb-5 px-4 sm:px-5 flex justify-start items-center flex-wrap">
+            <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
               {skillSet.map((skill: any) => {
                 return <Badge key={skill.id} {...skill} />;
               })}
@@ -138,7 +139,7 @@ export default function About() {
             <ResumeHeading section={"hobbies"} />
 
             {/* resume - hobbies body */}
-            <div className="mb-5 px-4 sm:px-5 flex justify-start items-center flex-wrap">
+            <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
               {hobbieSet.map((hobby: any) => {
                 return <Badge key={hobby.id} {...hobby} />;
               })}
@@ -151,8 +152,8 @@ export default function About() {
             <ResumeHeading section={"references"} />
 
             {/* resume - references body */}
-            <div className="mb-5 px-4 sm:px-5 flex justify-start items-center flex-wrap">
-              <span className="dark:text-neutral-300 text-sm">
+            <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
+              <span className="text-sm dark:text-neutral-300">
                 References available upon request
               </span>
             </div>
@@ -160,5 +161,98 @@ export default function About() {
         </div>
       </div>
     </Layout>
+  );
+}
+
+// EXTRA COMPONENTS
+function SectionWrapper({ children }: SectionWrapperProps) {
+  return (
+    <div className="mt-6 borde border-neutral-700 bg-neutral-80 p2">
+      {children}
+    </div>
+  );
+}
+
+function Badge({ value, theme }: ResumeBadgeProps) {
+  return (
+    <span className={`${theme} font-extrabold lowercase cursor-default mr-2`}>
+      [<span className="text-xs font-light">{value}</span>]
+    </span>
+  );
+}
+
+function ResumeHeading({ section }: ResumeHeadingProps) {
+  return (
+    <h2
+      id={section}
+      className="mb-3 text-sm font-light cursor-default md:text-lg dark:text-neutral-500"
+    >
+      <span className="dark:text-blue-500">&gt;</span> resume{" "}
+      <span className="dark:text-purple-400">--{section}</span>
+      <span className="font-semibold animate-ping">_</span>
+    </h2>
+  );
+}
+
+function DetailsCard({
+  start,
+  end = "Present",
+  location,
+  role,
+  organization,
+}: DetailsCardProps) {
+  return (
+    <div className="flex flex-col-reverse justify-start w-full px-6 mt-6 cursor-default sm:gap-5 sm:flex-row">
+      {/* period and location */}
+      <div className="flex flex-col justify-start md:w-1/3 sm:w-3/5">
+        <span className="text-sm font-light dark:text-neutral-200">
+          {start} - {end}
+        </span>
+        <span className="text-xs font-light sm:text-sm dark:text-neutral-400">
+          {location}
+        </span>
+      </div>
+
+      {/* organization and role */}
+      <div className="flex flex-col justify-start mb-1 sm:mb-0 sm:w-3/5">
+        <span className="font-bold text-md sm:text-lg dark:text-neutral-200">
+          {organization}
+        </span>
+        <span className="text-xs font-light sm:text-sm dark:text-neutral-400">
+          {role}
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function DutiesList({ duty }: DutiesProps) {
+  return <li className="leading-7">{duty}</li>;
+}
+
+function EmploymentDuties({
+  start,
+  end = "Present",
+  location,
+  organization,
+  role,
+  children,
+}: EmploymentDutiesProps) {
+  return (
+    <>
+      <DetailsCard
+        start={start}
+        end={end}
+        location={location}
+        organization={organization}
+        role={role}
+      />
+      <div className="flex flex-col-reverse justify-start w-full px-6 mt-1 cursor-default sm:gap-5 sm:flex-row">
+        <div className="md:w-1/3 sm:w-3/5"></div>
+        <ul className="pl-4 text-xs list-disc sm:w-3/5 sm:text-sm">
+          {children}
+        </ul>
+      </div>
+    </>
   );
 }

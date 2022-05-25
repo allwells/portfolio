@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "clear && rm -rf node_modules build .next && yarn install"
   },
   "dependencies": {
     "@mantine/core": "^4.2.6",
