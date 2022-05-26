@@ -27,8 +27,10 @@ export default function Navbar({ home, works, about, contact }: NavbarProps) {
 
   return (
     <nav
-      className={`dark:bg-neutral-900/80 backdrop-blur-sm fixed top-0 z-50 w-full px-4 sm:px-12 py-4 sm:py-6 flex flex-col justify-between ${
-        opened ? "border-b dark:border-neutral-800" : "border-b-0"
+      className={`backdrop-blur-sm fixed top-0 z-50 w-full px-4 sm:px-12 py-4 sm:py-6 flex flex-col justify-between ${
+        opened
+          ? "border-b dark:border-neutral-800 dark:bg-neutral-900/80"
+          : "border-b-0"
       }`}
     >
       {/* logo */}
