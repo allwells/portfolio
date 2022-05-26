@@ -51,7 +51,15 @@ export default function About() {
 
             {/* resume - profile body */}
             <div className="w-full px-6">
-              <p className="leading-8 text-left break-words cursor-default dark:text-neutral-400">
+              <p
+                style={{
+                  hyphens: "auto",
+                  WebkitHyphens: "auto",
+                  MozHyphens: "auto",
+                  msHyphens: "auto",
+                }}
+                className="text-sm leading-8 text-left cursor-default dark:text-neutral-400 sm:text-md"
+              >
                 Dedicated Fullstack Web Developer with over 1+ years experience
                 in frontend technologies:{" "}
                 <strong className="dark:text-neutral-50">React</strong>,{" "}
@@ -167,7 +175,7 @@ export default function About() {
 // EXTRA COMPONENTS
 function SectionWrapper({ children }: SectionWrapperProps) {
   return (
-    <div className="mt-6 borde border-neutral-700 bg-neutral-80 p2">
+    <div className="mt-6 border border-neutral-700 bg-neutral-800 p-2">
       {children}
     </div>
   );
