@@ -51,5 +51,15 @@ a {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-image: url("../public/profile3.png") !important;
+  background-image: url("../public/profile.png") !important;
 }
+
+#layout-bg {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-image: url("../public/pattern.jpg") !important;
+}
+
+/* Random Images */
+/* "https://api.lorem.space/image/fashion?w=1000&h=800" */

@@ -175,7 +175,7 @@ export default function About() {
 // EXTRA COMPONENTS
 function SectionWrapper({ children }: SectionWrapperProps) {
   return (
-    <div className="mt-6 border border-neutral-700 bg-neutral-800 p-2">
+    <div className="p-2 mt-6 transition duration-500 border border-neutral-700 bg-neutral-800/70 lg:opacity-40 lg:hover:opacity-100">
       {children}
     </div>
   );

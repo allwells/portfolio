@@ -19,7 +19,7 @@ export default function Layout({
   contact,
 }: LayoutProps) {
   return (
-    <div className="min-h-screen dark">
+    <div dir="ltr" id="layout-bg" className="min-h-screen dark">
       <Head>
         <title>Allwell Onen - {title}</title>
         <meta
@@ -29,7 +29,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar home={home} works={works} about={about} contact={contact} />
-      <main className="w-full min-h-screen bg-amber-50 dark:bg-neutral-900">
+      <main className="w-full min-h-screen bg-amber-50/80 dark:bg-neutral-900/80">
         {children}
       </main>
       {/* Footer */}
