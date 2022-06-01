@@ -26,10 +26,10 @@ export default function Home() {
                   </span>
                   ]
                 </span>{" "}
-                from Nigeria with over 1+ years experience in frontend
-                technologies: React, HTML5, CSS3, JavaScript, etc, and 7+ months
-                experience in backend technologies: Node.js, Express, MongoDB,
-                MySQL...
+                from Nigeria with at least 2 years of experience with frontend
+                technologies: React, HTML5, CSS3, JavaScript, etc, and 1+ years
+                of experience with backend technologies: Node.js, Express,
+                MongoDB, MySQL...
               </p>
 
               <div className="mt-4 text-center h-fit">

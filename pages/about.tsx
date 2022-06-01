@@ -60,13 +60,13 @@ export default function About() {
                 }}
                 className="text-sm leading-8 text-left cursor-default dark:text-neutral-400 sm:text-md"
               >
-                Dedicated Fullstack Web Developer with over 1+ years experience
-                in frontend technologies:{" "}
+                Dedicated Fullstack Web Developer with at least 2 years of
+                experience with frontend technologies:{" "}
                 <strong className="dark:text-neutral-50">React</strong>,{" "}
                 <strong className="dark:text-neutral-50">HTML</strong>,{" "}
                 <strong className="dark:text-neutral-50">CSS</strong>,{" "}
                 <strong className="dark:text-neutral-50">JavaScript</strong>,
-                etc, and 7+ months experience in backend technologies:{" "}
+                etc, and 1+ years of experience with backend technologies:{" "}
                 <strong className="dark:text-neutral-50">Node.js</strong>,{" "}
                 <strong className="dark:text-neutral-50">Express</strong>,
                 <strong className="dark:text-neutral-50">MongoDB</strong>,{" "}

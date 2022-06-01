@@ -58,6 +58,7 @@ a {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
   background-image: url("../public/pattern.jpg") !important;
 }
 
