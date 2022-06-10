@@ -11,13 +11,16 @@ import {
 
 import Layout from "../components/Layout";
 import React from "react";
+import CertificateCard from "../components/CertificateCard";
 
 export default function About() {
   const [educationDetails, setEducationDetails] = React.useState<any>([]);
   const [skillSet, setSkillSet] = React.useState<any>([]);
   const [hobbieSet, setHobbieSet] = React.useState<any>([]);
+  const [certificates, setCertificates] = React.useState<any>([]);
 
   React.useEffect(() => {
+    setCertificates(resource.certificates.reverse());
     setEducationDetails(resource.educations.reverse());
     setSkillSet(resource.skills);
     setHobbieSet(resource.hobbies);
@@ -125,6 +128,21 @@ export default function About() {
                   }
                 />
               </EmploymentDuties>
+            </div>
+          </SectionWrapper>
+
+          {/* CERTIFICATES */}
+          <SectionWrapper>
+            {/* resume - certificate heading */}
+            <ResumeHeading section={"certificates"} />
+
+            {/* resume - certificate body */}
+            <div className="flex flex-wrap items-start justify-start gap-4 px-4 mb-5 sm:px-5">
+              {certificates.map((certificate: any) => {
+                return (
+                  <CertificateCard key={certificate.id} {...certificate} />
+                );
+              })}
             </div>
           </SectionWrapper>
 

@@ -28,7 +28,7 @@ const skills = [
   {
     id: 0,
     value: "HTML/CSS",
-    theme: "dark:text-orange-600",
+    theme: "dark:text-orange-400",
   },
   {
     id: 1,
@@ -38,7 +38,7 @@ const skills = [
   {
     id: 2,
     value: "JavaScript",
-    theme: "dark:text-yellow-600",
+    theme: "dark:text-yellow-400",
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ const skills = [
   {
     id: 6,
     value: "MySQL",
-    theme: "dark:text-amber-600",
+    theme: "dark:text-amber-800",
   },
   {
     id: 7,
@@ -74,6 +74,11 @@ const skills = [
     id: 9,
     value: "Laravel",
     theme: "dark:text-rose-600",
+  },
+  {
+    id: 10,
+    value: "Java",
+    theme: "dark:text-orange-700",
   },
 ];
 
@@ -115,4 +120,58 @@ const hobbies = [
   },
 ];
 
-export { educations, skills, hobbies };
+const certificates = [
+  {
+    id: 1,
+    title: "Java Beginner",
+    organization: "SoloLearn",
+    organizationLink: "https://sololearn.com",
+    dateIssued: "Oct, 2020",
+    expiryDate: "",
+    credentialId: "19951669-1068",
+    credentialLink: "#",
+  },
+  {
+    id: 2,
+    title: "SQL (BASIC)",
+    organization: "HackerRank",
+    organizationLink: "https://hackerank.com",
+    dateIssued: "April, 2021",
+    expiryDate: "",
+    credentialId: "E23ED2BE003A",
+    credentialLink: "#",
+  },
+  {
+    id: 3,
+    title: "Software Application Development - Java Platform",
+    organization: "Loctech IT Training Institute",
+    organizationLink: "https://loctechng.com",
+    dateIssued: "September, 2019",
+    expiryDate: "",
+    credentialId: "RC 1450707",
+    credentialLink: "",
+  },
+  {
+    id: 4,
+    title: "Create a Promotional Video using Canva",
+    organization: "Coursera",
+    organizationLink: "https://coursera.com",
+    dateIssued: "January 2, 2022",
+    expiryDate: "",
+    credentialId: "VJUZS7ZAN6BF",
+    credentialLink: "https://coursera.org/verify/VJUZS7ZAN6BF",
+  },
+  {
+    id: 5,
+    title: "Project Writing And The Use Of Latex",
+    organization:
+      " Anchor University Laboratory for Interdisciplinary Statistical Science and Data Analysis (AULISSDA)",
+    organizationLink: "https://aul.edu.ng",
+    dateIssued: "February, 2022",
+    expiryDate: "",
+    credentialId: "Coming soon...",
+    credentialLink: "",
+  },
+];
+
+export { educations, skills, hobbies, certificates };
