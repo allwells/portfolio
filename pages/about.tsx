@@ -9,9 +9,9 @@ import {
   SectionWrapperProps,
 } from "../utils/props";
 
+import CertificateCard from "../components/CertificateCard";
 import Layout from "../components/Layout";
 import React from "react";
-import CertificateCard from "../components/CertificateCard";
 
 export default function About() {
   const [educationDetails, setEducationDetails] = React.useState<any>([]);
@@ -29,10 +29,7 @@ export default function About() {
   return (
     <Layout
       title={"About"}
-      home={undefined}
       about={"active"}
-      works={undefined}
-      contact={undefined}
     >
       <div className="px-5 pt-20 pb-12 sm:px-12 sm:pt-28 dark:text-neutral-200">
         {/* Page heading */}

@@ -6,9 +6,6 @@ export default function Home() {
     <Layout
       title={"Home"}
       home={"active"}
-      works={undefined}
-      about={undefined}
-      contact={undefined}
     >
       <div id="profile-image">
         <div className="flex items-center justify-center w-full min-h-screen px-4 pt-20 dark:bg-neutral-900/70 sm:pt-24 lg:px-32 sm:px-16">
