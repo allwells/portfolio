@@ -20,6 +20,7 @@ function CertificateCard(props: CertificateCardProps) {
       <a
         href={props.organizationLink}
         target="_blank"
+        rel="noreferrer"
         className="underline dark:hover:text-blue-500"
       >
         {props.organization}
@@ -46,6 +47,7 @@ function CertificateCard(props: CertificateCardProps) {
         <a
           href={props.credentialLink}
           target="_blank"
+          rel="noreferrer"
           className="text-base dark:text-blue-600"
         >
           [
