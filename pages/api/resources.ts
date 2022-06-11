@@ -165,7 +165,7 @@ const certificates = [
     id: 5,
     title: "Create a Promotional Video using Canva",
     organization: "Coursera",
-    organizationLink: "https://coursera.com",
+    organizationLink: "https://coursera.org",
     dateIssued: "January 02, 2022",
     expiryDate: "",
     credentialId: "VJUZS7ZAN6BF",
