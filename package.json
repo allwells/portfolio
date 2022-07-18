@@ -12,7 +12,7 @@
   "dependencies": {
     "@mantine/hooks": "^4.2.7",
     "@mantine/core": "^4.2.7",
-    "@mantine/next": "^4.2.7",
+    "@mantine/next": "^4.2.11",
     "axios": "^0.27.2",
     "next": "12.1.6",
     "nprogress": "^0.2.0",
