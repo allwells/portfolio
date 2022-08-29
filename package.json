@@ -10,14 +10,14 @@
     "clean": "clear && rm -rf node_modules build .next && yarn install"
   },
   "dependencies": {
-    "@mantine/core": "^4.2.6",
-    "@mantine/hooks": "^4.2.6",
-    "@mantine/next": "^4.2.6",
+    "@mantine/hooks": "^4.2.7",
+    "@mantine/core": "^4.2.7",
+    "@mantine/next": "^4.2.7",
     "axios": "^0.27.2",
     "next": "12.1.6",
     "nprogress": "^0.2.0",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
