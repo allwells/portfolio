@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 interface LayoutProps {
   title: string;
@@ -19,20 +20,30 @@ export default function Layout({
   contact,
 }: LayoutProps) {
   return (
-    <div dir="ltr" id="layout-bg" className="min-h-screen dark">
+    <div dir="ltr" id="layout-bg" className="w-full min-h-screen dark">
       <Head>
         <title>Allwell Onen - {title}</title>
         <meta
           name="description"
-          content="Dedicated Fullstack Web Developer with over 1+ years experience..."
+          content="Software Developer with over 2 years of experience in the field."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar home={home} works={works} about={about} contact={contact} />
-      <main className="w-full min-h-screen bg-amber-50/80 dark:bg-neutral-900/80">
-        {children}
-      </main>
-      {/* Footer */}
+
+      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-amber-50/80 dark:bg-neutral-900/80">
+        <Navbar home={home} works={works} about={about} contact={contact} />
+
+        <div className="w-full min-h-screen max-w-[1400px] border-x border-neutral-700">
+          <div
+            className={`w-full min-h-screen ${
+              !home ? "backdrop-blur-sm" : null
+            }`}
+          >
+            {children}
+          </div>
+          {!home ? <Footer /> : null}
+        </div>
+      </div>
     </div>
   );
 }

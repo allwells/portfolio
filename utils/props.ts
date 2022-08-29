@@ -1,9 +1,12 @@
 interface ResumeHeadingProps {
   section: string;
+  activateCursor: boolean;
 }
 
 interface SectionWrapperProps {
   children: React.ReactNode;
+  onMouseEnter: Function;
+  onMouseLeave: Function;
 }
 
 interface DetailsCardProps {

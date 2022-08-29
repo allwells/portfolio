@@ -1,22 +1,22 @@
 const educations = [
-  {
-    id: 0,
-    start: "Oct 2006",
-    end: "Jul 2010",
-    location: "Port harcourt, Nigeria",
-    role: "Primary Education",
-    organization: "New Covenant Group of Schools",
-  },
+  // {
+  //   id: 0,
+  //   start: "Oct 2006",
+  //   end: "Jul 2010",
+  //   location: "Port harcourt, Nigeria",
+  //   role: "Primary Education",
+  //   organization: "New Covenant Group of Schools",
+  // },
+  // {
+  //   id: 1,
+  //   start: "Sep 2010",
+  //   end: "Jul 2016",
+  //   location: "Port Harcourt, Nigeria",
+  //   role: "Secondary Education",
+  //   organization: "Science and Arts Specialist College",
+  // },
   {
     id: 1,
-    start: "Sep 2010",
-    end: "Jul 2016",
-    location: "Port Harcourt, Nigeria",
-    role: "Secondary Education",
-    organization: "Science and Arts Specialist College",
-  },
-  {
-    id: 2,
     start: "Sep 2019",
     location: "Lagos, Nigeria",
     role: "BSc. Computer Science",
@@ -129,7 +129,8 @@ const certificates = [
     dateIssued: "October 08, 2020",
     expiryDate: "",
     credentialId: "19951669-1068",
-    credentialLink: "https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png",
+    credentialLink:
+      "https://www.sololearn.com/certificates/course/en/19951669/1068/landscape/png",
   },
   {
     id: 2,
@@ -139,7 +140,8 @@ const certificates = [
     dateIssued: "November 27, 2020",
     expiryDate: "",
     credentialId: "19951669-1060",
-    credentialLink: "https://www.sololearn.com/certificates/course/en/19951669/1060/landscape/png",
+    credentialLink:
+      "https://www.sololearn.com/certificates/course/en/19951669/1060/landscape/png",
   },
   {
     id: 3,
@@ -184,100 +186,43 @@ const certificates = [
   },
 ];
 
-import eVotingAppImage from "../../public/uploads/certs/cert01.png"
-import myPortfolioAppImage from "../../public/uploads/certs/cert01.png"
-import portfolioAppImage from "../../public/uploads/certs/cert01.png"
-import renicAppImage from "../../public/uploads/certs/cert01.png"
-import txtEdAppImage from "../../public/uploads/certs/cert01.png"
-
-const works = [
-  {
-    id: 1,
-    tag: "typescript",
-    url: "https://allwells.vercel.app",
-    image: myPortfolioAppImage,
-    title: "My portfolio",
-    description: "This is my portfolio app. This was built with Nextjs and Typescript, Tailwindcss and Nodejs.",
-  },
-  {
-    id: 2,
-    tag: "java",
-    url: "https://github.com/allwells/hospital-management-system",
-    image: "",
-    title: "Hospital Management System",
-    description: "Hospital Management System is a desktop-based application software that was built with Java Swing.",
-  },
-  {
-    id: 3,
-    tag: "typescript",
-    url: "https://renic.vercel.app",
-    image: renicAppImage,
-    title: "Renic Branding",
-    description: "Renic Branding is a professional branding agency that prioritize distinguishing their customers from the competition and helping their customers to connect better with their audience through strategy, design and marketing. This was built with Nextjs.",
-  },
-  {
-    id: 4,
-    tag: "javascript",
-    url: "https://unique.vercel.app",
-    image: portfolioAppImage,
-    title: "Portfolio App",
-    description: "This is a portfolio app built with Reactjs.",
-  },
-  {
-    id: 5,
-    tag: "laravel",
-    url: "https://github.com/allwells/e-voting",
-    image: eVotingAppImage,
-    title: "e-Voting",
-    description: "e-Voting is a online voting platform built with Laravel and Tailwindcss.",
-  },
-  {
-    id: 6,
-    tag: "electron",
-    url: "https://github.com/allwells/txt-ed",
-    image: txtEdAppImage,
-    title: "Txt-Ed",
-    description: "Txt-Ed is a simple desktop-based text editor application built with Electron.",
-  }
-]
-
 const contacts = [
   {
     id: 1,
     username: "allwells.official",
     platform: "Facebook",
-    url: "https://facebook.com/allwells.official"
+    url: "https://facebook.com/allwells.official",
   },
   {
     id: 2,
     username: "allwell_festus",
     platform: "Twitter",
-    url: "https://twitter.com/allwell_festus"
+    url: "https://twitter.com/allwell_festus",
   },
   {
     id: 3,
     username: "allwells_official",
     platform: "Instagram",
-    url: "https://instagram.com/allwells_official"
+    url: "https://instagram.com/allwells_official",
   },
   {
     id: 4,
     username: "allwells",
     platform: "LinkedIn",
-    url: "https://linkedin.com/in/allwells"
+    url: "https://linkedin.com/in/allwells",
   },
   {
     id: 5,
     username: "allwells",
     platform: "Telegram",
-    url: "https://t.me/allwells"
+    url: "https://t.me/allwells",
   },
   {
     id: 6,
     username: "aleenfestus@gmail.com",
     platform: "Gmail",
-    url: "mailto:aleenfestus@gmail.com"
+    url: "mailto:aleenfestus@gmail.com",
   },
-]
+];
 
-export { educations, skills, hobbies, certificates, works, contacts };
+export { educations, skills, hobbies, certificates, contacts };

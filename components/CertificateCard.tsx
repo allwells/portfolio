@@ -12,7 +12,7 @@ type CertificateCardProps = {
 
 function CertificateCard(props: CertificateCardProps) {
   return (
-    <div className="flex-grow flex-shrink max-w-xl p-3 text-sm border cursor-default dark:border-neutral-700 backdrop-blur dark:bg-neutral-100/5 dark:text-neutral-300">
+    <div className="flex-grow flex-shrink p-3 text-sm transition duration-200 border cursor-default dark:hover:bg-white/10 dark:border-neutral-700 backdrop-blur dark:bg-neutral-100/5 dark:text-neutral-300">
       {/* card title */}
       <h3 className="text-base font-bold text-neutral-50">{props.title}</h3>
 

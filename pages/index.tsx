@@ -15,15 +15,7 @@ export default function Home() {
                 Hi! I&apos;m Allwell Onen,
               </h1>
               <p className="text-sm font-light tracking-wider sm:text-xl dark:text-neutral-300">
-                a{" "}
-                <span className="font-extrabold dark:text-orange-400">
-                  [
-                  <span className="font-light dark:text-rose-500">
-                    fullstack-web-developer
-                  </span>
-                  ]
-                </span>{" "}
-                from Nigeria with at least 2 years of experience with frontend
+                a Full Stack Web Developer from Nigeria with at least 2 years of experience with frontend
                 technologies: React, HTML5, CSS3, JavaScript, etc, and 1+ years
                 of experience with backend technologies: Node.js, Express,
                 MongoDB, MySQL...

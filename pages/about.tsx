@@ -18,6 +18,16 @@ export default function About() {
   const [skillSet, setSkillSet] = React.useState<any>([]);
   const [hobbieSet, setHobbieSet] = React.useState<any>([]);
   const [certificates, setCertificates] = React.useState<any>([]);
+  const [isProfileActivated, setProfileActivated] =
+    React.useState<boolean>(false);
+  const [isEduActivated, setEduActivated] = React.useState<boolean>(false);
+  const [isEmploymentActivated, setEmploymentActivated] =
+    React.useState<boolean>(false);
+  const [isCertActivated, setCertActivated] = React.useState<boolean>(false);
+  const [isSkillActivated, setSkillActivated] = React.useState<boolean>(false);
+  const [isHobbiesActivated, setHobbiesActivated] =
+    React.useState<boolean>(false);
+  const [isRefActivated, setRefActivated] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     setCertificates(resource.certificates.reverse());
@@ -26,16 +36,62 @@ export default function About() {
     setHobbieSet(resource.hobbies);
   }, []);
 
+  const activateProfile = () => {
+    setProfileActivated(true);
+  };
+  const deactivateProfile = () => {
+    setProfileActivated(false);
+  };
+
+  const activateEdu = () => {
+    setEduActivated(true);
+  };
+  const deactivateEdu = () => {
+    setEduActivated(false);
+  };
+
+  const activateEmployment = () => {
+    setEmploymentActivated(true);
+  };
+  const deactivateEmployment = () => {
+    setEmploymentActivated(false);
+  };
+
+  const activateCert = () => {
+    setCertActivated(true);
+  };
+  const deactivateCert = () => {
+    setCertActivated(false);
+  };
+
+  const activateSkill = () => {
+    setSkillActivated(true);
+  };
+  const deactivateSkill = () => {
+    setSkillActivated(false);
+  };
+
+  const activateHobbies = () => {
+    setHobbiesActivated(true);
+  };
+  const deactivateHobbies = () => {
+    setHobbiesActivated(false);
+  };
+
+  const activateRef = () => {
+    setRefActivated(true);
+  };
+  const deactivateRef = () => {
+    setRefActivated(false);
+  };
+
   return (
-    <Layout
-      title={"About"}
-      about={"active"}
-    >
-      <div className="px-5 pt-20 pb-12 sm:px-12 sm:pt-28 dark:text-neutral-200">
+    <Layout title={"About"} about={"active"}>
+      <div className="w-full px-5 pt-20 pb-12 sm:px-12 sm:pt-28 dark:text-neutral-200">
         {/* Page heading */}
         <h1 className="mb-4 text-lg font-extrabold cursor-default md:text-2xl dark:text-neutral-300">
           <span className="dark:text-blue-600">$</span> about{" "}
-          <span className="text-md dark:text-rose-500">
+          <span className="text-md dark:text-red-500">
             allwell{" "}
             <span className="font-normal dark:text-purple-500">--onen</span>
           </span>
@@ -45,9 +101,15 @@ export default function About() {
         {/* page body */}
         <div className="w-full px-0 mt-4 sm:px-8">
           {/* PROFILE */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateProfile}
+            onMouseLeave={deactivateProfile}
+          >
             {/* resume - profile heading */}
-            <ResumeHeading section={"profile"} />
+            <ResumeHeading
+              activateCursor={isProfileActivated}
+              section={"profile"}
+            />
 
             {/* resume - profile body */}
             <div className="w-full px-6">
@@ -83,9 +145,15 @@ export default function About() {
           </SectionWrapper>
 
           {/* EDUCATION */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateEdu}
+            onMouseLeave={deactivateEdu}
+          >
             {/* resume - education heading */}
-            <ResumeHeading section={"education"} />
+            <ResumeHeading
+              activateCursor={isEduActivated}
+              section={"education"}
+            />
 
             {/* resume - education body */}
             <div className="pb-6">
@@ -96,14 +164,21 @@ export default function About() {
           </SectionWrapper>
 
           {/* EMPLOYMENT */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateEmployment}
+            onMouseLeave={deactivateEmployment}
+          >
             {/* resume - employment heading */}
-            <ResumeHeading section={"employment"} />
+            <ResumeHeading
+              activateCursor={isEmploymentActivated}
+              section={"employment"}
+            />
 
             {/* resume - employment body */}
             <div className="pb-6">
               <EmploymentDuties
                 start={"Apr 2022"}
+                end={"August 2022"}
                 location={"Port Harcourt, Nigeria"}
                 organization={"Mesh Advertising & Design Studios"}
                 role={"Web Developer Intern"}
@@ -117,7 +192,12 @@ export default function About() {
                   }
                 />
                 <DutiesList
-                  duty={"Brought forth a passion for the industry."}
+                  duty={"Contributed to the design of the e-Voting platform."}
+                />
+                <DutiesList
+                  duty={
+                    "Single-handedly built an e-Voting platform which is an extension of the company's yet-to-be-released software, Voices."
+                  }
                 />
                 <DutiesList
                   duty={
@@ -129,12 +209,18 @@ export default function About() {
           </SectionWrapper>
 
           {/* CERTIFICATES */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateCert}
+            onMouseLeave={deactivateCert}
+          >
             {/* resume - certificate heading */}
-            <ResumeHeading section={"certificates"} />
+            <ResumeHeading
+              activateCursor={isCertActivated}
+              section={"certificates"}
+            />
 
             {/* resume - certificate body */}
-            <div className="flex flex-wrap items-start justify-start gap-4 px-4 mb-5 sm:px-5">
+            <div className="grid grid-cols-3 gap-5 px-3 mb-5 sm:px-5">
               {certificates.map((certificate: any) => {
                 return (
                   <CertificateCard key={certificate.id} {...certificate} />
@@ -144,9 +230,15 @@ export default function About() {
           </SectionWrapper>
 
           {/* SKILLS */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateSkill}
+            onMouseLeave={deactivateSkill}
+          >
             {/* resume - skills heading */}
-            <ResumeHeading section={"skills"} />
+            <ResumeHeading
+              activateCursor={isSkillActivated}
+              section={"skills"}
+            />
 
             {/* resume - skills body */}
             <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
@@ -157,9 +249,15 @@ export default function About() {
           </SectionWrapper>
 
           {/* HOBBIES */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateHobbies}
+            onMouseLeave={deactivateHobbies}
+          >
             {/* resume - hobbies heading */}
-            <ResumeHeading section={"hobbies"} />
+            <ResumeHeading
+              activateCursor={isHobbiesActivated}
+              section={"hobbies"}
+            />
 
             {/* resume - hobbies body */}
             <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
@@ -170,9 +268,15 @@ export default function About() {
           </SectionWrapper>
 
           {/* REFERENCES */}
-          <SectionWrapper>
+          <SectionWrapper
+            onMouseEnter={activateRef}
+            onMouseLeave={deactivateRef}
+          >
             {/* resume - references heading */}
-            <ResumeHeading section={"references"} />
+            <ResumeHeading
+              activateCursor={isRefActivated}
+              section={"references"}
+            />
 
             {/* resume - references body */}
             <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
@@ -188,9 +292,17 @@ export default function About() {
 }
 
 // EXTRA COMPONENTS
-function SectionWrapper({ children }: SectionWrapperProps) {
+function SectionWrapper({
+  children,
+  onMouseEnter,
+  onMouseLeave,
+}: SectionWrapperProps) {
   return (
-    <div className="p-2 mt-6 transition duration-500 border border-neutral-700 bg-neutral-800/70 lg:opacity-40 lg:hover:opacity-100">
+    <div
+      onMouseEnter={() => onMouseEnter()}
+      onMouseLeave={() => onMouseLeave()}
+      className="p-2 mt-6 border border-neutral-700 bg-neutral-800/70"
+    >
       {children}
     </div>
   );
@@ -204,15 +316,19 @@ function Badge({ value, theme }: ResumeBadgeProps) {
   );
 }
 
-function ResumeHeading({ section }: ResumeHeadingProps) {
+function ResumeHeading({ section, activateCursor }: ResumeHeadingProps) {
   return (
     <h2
       id={section}
-      className="mb-3 text-sm font-light cursor-default md:text-lg dark:text-neutral-500"
+      className="mb-3 text-sm font-light cursor-default md:text-lg dark:text-sky-500"
     >
-      <span className="dark:text-blue-500">&gt;</span> resume{" "}
-      <span className="dark:text-purple-400">--{section}</span>
-      <span className="font-semibold animate-ping">_</span>
+      <span className="dark:text-red-500">&gt;</span> resume{" "}
+      <span className="dark:text-emerald-400">--{section}</span>
+      <span
+        className={`font-semibold ${activateCursor ? "animate-ping" : null}`}
+      >
+        _
+      </span>
     </h2>
   );
 }
