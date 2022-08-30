@@ -29,7 +29,7 @@ export default function Navbar({ home, works, about, contact }: NavbarProps) {
     <nav
       className={`${
         !home ? "backdrop-blur-sm" : "backdrop-blur-0"
-      } fixed top-0 z-50 w-full max-w-[1400px] px-4 sm:px-12 py-4 sm:py-6 flex flex-col justify-between ${
+      } fixed top-0 z-50 w-full max-w-[998px] px-2 sm:px-8 py-4 sm:py-6 flex flex-col justify-between ${
         opened
           ? "border-b dark:border-neutral-800 dark:bg-neutral-900/80"
           : "border-b-0"
@@ -55,7 +55,7 @@ export default function Navbar({ home, works, about, contact }: NavbarProps) {
 
         {/* nav items */}
         <div className="hidden md:flex">
-          <ul className="flex justify-between space-x-9">
+          <ul className="flex justify-between text-sm space-x-9">
             <NavLinkDesktop id={home} page={"home"} route={""} />
             <NavLinkDesktop id={about} page={"about"} route={"about"} />
             <NavLinkDesktop id={works} page={"works"} route={"works"} />
@@ -83,7 +83,7 @@ function NavLinkMobile({ id, page, route }: NavLinkMobileProps) {
       <Link href={`/${route}`}>
         <a
           id={id}
-          className="w-full p-2 text-sm border dark:text-neutral-100 dark:border-neutral-800 dark:focus:bg-neutral-800 dark:focus:text-neutral-50"
+          className="w-full p-2 text-xs border dark:text-neutral-100 dark:border-neutral-800 dark:focus:bg-neutral-800 dark:focus:text-neutral-50"
         >
           <span className="ml-1 dark:text-blue-500">$</span>
           <span className="page-title dark:text-rose-500">{page}</span>

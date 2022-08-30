@@ -64,7 +64,19 @@ const works = [
 export default function Works() {
   return (
     <Layout title={"Works"} works={"active"}>
-      <div className="flex items-center justify-center w-full px-5 pt-16 pb-6 text-center sm:px-16 sm:pt-20 dark:text-neutral-200">
+      <div className="flex flex-col items-center justify-center w-full px-5 pt-16 pb-6 text-center sm:px-16 sm:pt-20 dark:text-neutral-200">
+        {/* Page heading */}
+        <div className="flex items-center justify-start w-full mb-4">
+          <h1 className="text-base font-extrabold cursor-default md:text-xl dark:text-lime-500">
+            <span className="dark:text-blue-600">$</span> works{" "}
+            <span className="text-md dark:text-red-500">
+              allwell{" "}
+              <span className="font-normal dark:text-emerald-500">--onen</span>
+            </span>
+            <span className="text-white animate-ping">_</span>
+          </h1>
+        </div>
+
         <div className="flex items-center justify-center w-full h-[80vh] text-sm md:text-xl text-neutral-400 border border-dashed border-neutral-700">
           <span className="animate-pulse">Coming soon...</span>
         </div>

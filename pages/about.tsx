@@ -87,19 +87,19 @@ export default function About() {
 
   return (
     <Layout title={"About"} about={"active"}>
-      <div className="w-full px-5 pt-20 pb-12 sm:px-12 sm:pt-28 dark:text-neutral-200">
+      <div className="w-full px-2 pt-20 pb-12 sm:px-8 dark:text-neutral-200">
         {/* Page heading */}
-        <h1 className="mb-4 text-lg font-extrabold cursor-default md:text-2xl dark:text-neutral-300">
+        <h1 className="mb-4 text-base font-extrabold cursor-default md:text-xl dark:text-lime-500">
           <span className="dark:text-blue-600">$</span> about{" "}
           <span className="text-md dark:text-red-500">
             allwell{" "}
-            <span className="font-normal dark:text-purple-500">--onen</span>
+            <span className="font-normal dark:text-emerald-500">--onen</span>
           </span>
-          <span className="animate-ping">_</span>
+          <span className="text-white animate-ping">_</span>
         </h1>
 
         {/* page body */}
-        <div className="w-full px-0 mt-4 sm:px-8">
+        <div className="w-full md:px-6">
           {/* PROFILE */}
           <SectionWrapper
             onMouseEnter={activateProfile}
@@ -112,7 +112,7 @@ export default function About() {
             />
 
             {/* resume - profile body */}
-            <div className="w-full px-6">
+            <div className="w-full px-4 sm:px-5">
               <p
                 style={{
                   hyphens: "auto",
@@ -120,26 +120,16 @@ export default function About() {
                   MozHyphens: "auto",
                   msHyphens: "auto",
                 }}
-                className="text-sm leading-8 text-left cursor-default dark:text-neutral-400 sm:text-md"
+                className="text-xs leading-6 text-left cursor-default dark:text-neutral-200"
               >
-                Dedicated Fullstack Web Developer with at least 2 years of
-                experience with frontend technologies:{" "}
-                <strong className="dark:text-neutral-50">React</strong>,{" "}
-                <strong className="dark:text-neutral-50">HTML</strong>,{" "}
-                <strong className="dark:text-neutral-50">CSS</strong>,{" "}
-                <strong className="dark:text-neutral-50">JavaScript</strong>,
-                etc, and 1+ years of experience with backend technologies:{" "}
-                <strong className="dark:text-neutral-50">Node.js</strong>,{" "}
-                <strong className="dark:text-neutral-50">Express</strong>,
-                <strong className="dark:text-neutral-50">MongoDB</strong>,{" "}
-                <strong className="dark:text-neutral-50">MySQL</strong>,{" "}
-                <strong className="dark:text-neutral-50">Laravel</strong>.
-                Possesses problem-solving skills and a self-motivated,
-                dependable nature and able to effectively self-manage during
-                independent projects, as well as collaborate as part of a
-                productive team. Focused on helping the company achieve short-
-                and long-term goals as well as client satisfaction and event
-                success.
+                A self-taught Software Developer from 🇳🇬Nigeria🇳🇬 with at least
+                2 years of experience with software technologies like Java,
+                React, Node, MySQL, etc. I possess exceptional problem-solving
+                skills and a self-motivated, dependable nature and able to
+                effectively self-manage during independent projects, as well as
+                collaborate as part of a productive team. I am goal-driven
+                individual and I focus on helping companies achieve short- and
+                long-term goals as well as client satisfaction.
               </p>
             </div>
           </SectionWrapper>
@@ -178,8 +168,8 @@ export default function About() {
             <div className="pb-6">
               <EmploymentDuties
                 start={"Apr 2022"}
-                end={"August 2022"}
-                location={"Port Harcourt, Nigeria"}
+                end={"Aug 2022"}
+                location={"Port Harcourt, Rivers, Nigeria"}
                 organization={"Mesh Advertising & Design Studios"}
                 role={"Web Developer Intern"}
               >
@@ -220,7 +210,7 @@ export default function About() {
             />
 
             {/* resume - certificate body */}
-            <div className="grid grid-cols-3 gap-5 px-3 mb-5 sm:px-5">
+            <div className="grid grid-cols-1 gap-5 mb-6 sm:grid-cols-2 sm:px-5">
               {certificates.map((certificate: any) => {
                 return (
                   <CertificateCard key={certificate.id} {...certificate} />
@@ -241,7 +231,7 @@ export default function About() {
             />
 
             {/* resume - skills body */}
-            <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
+            <div className="flex flex-wrap items-center justify-start px-3 mb-5 sm:px-5">
               {skillSet.map((skill: any) => {
                 return <Badge key={skill.id} {...skill} />;
               })}
@@ -280,7 +270,7 @@ export default function About() {
 
             {/* resume - references body */}
             <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
-              <span className="text-sm dark:text-neutral-300">
+              <span className="text-xs dark:text-neutral-300">
                 References available upon request
               </span>
             </div>
@@ -320,7 +310,7 @@ function ResumeHeading({ section, activateCursor }: ResumeHeadingProps) {
   return (
     <h2
       id={section}
-      className="mb-3 text-sm font-light cursor-default md:text-lg dark:text-sky-500"
+      className="mb-3 text-xs font-light cursor-default md:text-sm dark:text-sky-500"
     >
       <span className="dark:text-red-500">&gt;</span> resume{" "}
       <span className="dark:text-emerald-400">--{section}</span>
@@ -341,32 +331,30 @@ function DetailsCard({
   organization,
 }: DetailsCardProps) {
   return (
-    <div className="flex flex-col-reverse justify-start w-full px-6 mt-6 cursor-default sm:gap-5 sm:flex-row">
+    <div className="flex flex-col-reverse justify-start w-full px-4 cursor-default sm:px-5 sm:gap-5 sm:flex-row">
       {/* period and location */}
       <div className="flex flex-col justify-start md:w-1/3 sm:w-3/5">
-        <span className="text-sm font-light dark:text-neutral-200">
+        <span className="text-xs font-light dark:text-neutral-200">
           {start} - {end}
         </span>
-        <span className="text-xs font-light sm:text-sm dark:text-neutral-400">
+        <span className="text-xs font-light dark:text-neutral-400">
           {location}
         </span>
       </div>
 
       {/* organization and role */}
       <div className="flex flex-col justify-start mb-1 sm:mb-0 sm:w-3/5">
-        <span className="font-bold text-md sm:text-lg dark:text-neutral-200">
+        <span className="text-sm font-bold sm:text-base dark:text-neutral-200">
           {organization}
         </span>
-        <span className="text-xs font-light sm:text-sm dark:text-neutral-400">
-          {role}
-        </span>
+        <span className="text-xs font-light dark:text-neutral-400">{role}</span>
       </div>
     </div>
   );
 }
 
 function DutiesList({ duty }: DutiesProps) {
-  return <li className="leading-7">{duty}</li>;
+  return <li className="text-xs leading-7">{duty}</li>;
 }
 
 function EmploymentDuties({
@@ -386,11 +374,9 @@ function EmploymentDuties({
         organization={organization}
         role={role}
       />
-      <div className="flex flex-col-reverse justify-start w-full px-6 mt-1 cursor-default sm:gap-5 sm:flex-row">
+      <div className="flex flex-col-reverse justify-start w-full px-5 mt-1 cursor-default sm:gap-5 sm:flex-row">
         <div className="md:w-1/3 sm:w-3/5"></div>
-        <ul className="pl-4 text-xs list-disc sm:w-3/5 sm:text-sm">
-          {children}
-        </ul>
+        <ul className="pl-4 text-xs list-disc sm:w-3/5">{children}</ul>
       </div>
     </>
   );

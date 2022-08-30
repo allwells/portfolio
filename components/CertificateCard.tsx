@@ -12,35 +12,38 @@ type CertificateCardProps = {
 
 function CertificateCard(props: CertificateCardProps) {
   return (
-    <div className="flex-grow flex-shrink p-3 text-sm transition duration-200 border cursor-default dark:hover:bg-white/10 dark:border-neutral-700 backdrop-blur dark:bg-neutral-100/5 dark:text-neutral-300">
-      {/* card title */}
-      <h3 className="text-base font-bold text-neutral-50">{props.title}</h3>
+    <div className="flex flex-col items-start justify-between flex-grow flex-shrink gap-5 p-3 text-xs transition duration-200 border cursor-default dark:hover:bg-white/10 dark:border-neutral-700 backdrop-blur dark:bg-neutral-100/5 dark:text-neutral-300">
+      <div>
+        {/* card title */}
+        <h3 className="text-sm font-bold text-neutral-50">{props.title}</h3>
 
-      {/* organization */}
-      <a
-        href={props.organizationLink}
-        target="_blank"
-        rel="noreferrer"
-        className="underline dark:hover:text-blue-500"
-      >
-        {props.organization}
-      </a>
+        {/* organization */}
+        <a
+          href={props.organizationLink}
+          target="_blank"
+          rel="noreferrer"
+          className="underline dark:hover:text-blue-500"
+        >
+          {props.organization}
+        </a>
 
-      {/* dates */}
-      <div className="flex flex-col items-start justify-center gap-2 mt-3 sm:mt-0 sm:items-center sm:flex-row sm:justify-between w-fit">
-        <span>
-          <span className="block font-semibold sm:hidden">Date Issued:</span>{" "}
-          {props.dateIssued}
-        </span>
-        <span className="hidden sm:block">-</span>
-        <span>
-          <span className="block font-semibold sm:hidden">Expiry Date:</span>{" "}
-          {props.expiryDate ? props.expiryDate : "No expiration date"}
-        </span>
+        {/* dates */}
+        <div className="flex flex-col items-start justify-center gap-2 mt-3 w-fit">
+          <span>
+            <span className="font-semibold">Date Issued:</span>{" "}
+            {props.dateIssued}
+          </span>
+          <span>
+            <span className="font-semibold ">Expiry Date:</span>{" "}
+            {props.expiryDate ? props.expiryDate : "No expiration date"}
+          </span>
+        </div>
+
+        {/* certificate ID */}
+        {props.credentialId ? (
+          <p className="mt-3">Credential ID: {props.credentialId}</p>
+        ) : null}
       </div>
-
-      {/* certificate ID */}
-      <p className="mt-3 mb-3">Credential ID: {props.credentialId}</p>
 
       {/* link to certificate */}
       {props.credentialLink ? (
@@ -51,15 +54,15 @@ function CertificateCard(props: CertificateCardProps) {
           className="text-base dark:text-blue-600"
         >
           [
-          <span className="text-sm dark:text-neutral-400 dark:hover:text-neutral-100">
+          <span className="text-xs dark:text-neutral-200 md:dark:text-neutral-400 md:dark:hover:text-neutral-100">
             See Credential
           </span>
           ]
         </a>
       ) : (
-        <button type="button" className="text-base dark:text-blue-600">
+        <button type="button" className="text-sm dark:text-blue-600">
           [
-          <span className="text-sm dark:text-neutral-400 dark:hover:text-neutral-100">
+          <span className="text-xs dark:text-neutral-200 md:dark:text-neutral-400 md:dark:hover:text-neutral-100">
             See Credential
           </span>
           ]

@@ -33,7 +33,7 @@ export default function Layout({
       <div className="flex flex-col items-center justify-center w-full min-h-screen bg-amber-50/80 dark:bg-neutral-900/80">
         <Navbar home={home} works={works} about={about} contact={contact} />
 
-        <div className="w-full min-h-screen max-w-[1400px] border-x border-neutral-700">
+        <div className="w-full min-h-screen max-w-[1000px] sm:border-x sm:border-neutral-700">
           <div
             className={`w-full min-h-screen ${
               !home ? "backdrop-blur-sm" : null
