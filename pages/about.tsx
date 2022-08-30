@@ -180,7 +180,6 @@ export default function About() {
             <div className="pb-6">
               <EmploymentDuties
                 start={"Apr 2022"}
-                end={"Aug 2022"}
                 location={"Port Harcourt, Rivers, Nigeria"}
                 organization={"Mesh Advertising & Design Studios"}
                 role={"Web Developer Intern"}
