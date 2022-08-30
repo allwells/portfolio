@@ -80,6 +80,11 @@ const skills = [
     value: "Java",
     theme: "dark:text-orange-700",
   },
+  {
+    id: 11,
+    value: "Figma",
+    theme: "dark:text-red-500",
+  },
 ];
 
 const hobbies = [
