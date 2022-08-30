@@ -10,6 +10,15 @@ export default function Footer() {
       >
         Next.js
       </a>
+      ,
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://typescriptlang.org"
+        className="mx-1 text-blue-700 hover:underline"
+      >
+        Typescript
+      </a>
       and
       <a
         target="_blank"
