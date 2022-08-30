@@ -106,10 +106,14 @@ export default function About() {
             onMouseLeave={deactivateProfile}
           >
             {/* resume - profile heading */}
-            <ResumeHeading
-              activateCursor={isProfileActivated}
-              section={"profile"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isProfileActivated}
+                section={"profile"}
+              />
+
+              <span className="text-base -mt-4">👤</span>
+            </div>
 
             {/* resume - profile body */}
             <div className="w-full px-4 sm:px-5">
@@ -140,10 +144,14 @@ export default function About() {
             onMouseLeave={deactivateEdu}
           >
             {/* resume - education heading */}
-            <ResumeHeading
-              activateCursor={isEduActivated}
-              section={"education"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isEduActivated}
+                section={"education"}
+              />
+
+              <span className="text-base -mt-4">📚</span>
+            </div>
 
             {/* resume - education body */}
             <div className="pb-6">
@@ -159,10 +167,14 @@ export default function About() {
             onMouseLeave={deactivateEmployment}
           >
             {/* resume - employment heading */}
-            <ResumeHeading
-              activateCursor={isEmploymentActivated}
-              section={"employment"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isEmploymentActivated}
+                section={"employment"}
+              />
+
+              <span className="text-base -mt-4">👨🏾‍💻</span>
+            </div>
 
             {/* resume - employment body */}
             <div className="pb-6">
@@ -204,10 +216,14 @@ export default function About() {
             onMouseLeave={deactivateCert}
           >
             {/* resume - certificate heading */}
-            <ResumeHeading
-              activateCursor={isCertActivated}
-              section={"certificates"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isCertActivated}
+                section={"certificates"}
+              />
+
+              <span className="text-base -mt-4">🧾</span>
+            </div>
 
             {/* resume - certificate body */}
             <div className="grid grid-cols-1 gap-5 mb-6 sm:grid-cols-2 sm:px-5">
@@ -225,10 +241,14 @@ export default function About() {
             onMouseLeave={deactivateSkill}
           >
             {/* resume - skills heading */}
-            <ResumeHeading
-              activateCursor={isSkillActivated}
-              section={"skills"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isSkillActivated}
+                section={"skills"}
+              />
+
+              <span className="text-base -mt-4">🛠</span>
+            </div>
 
             {/* resume - skills body */}
             <div className="flex flex-wrap items-center justify-start px-3 mb-5 sm:px-5">
@@ -244,10 +264,14 @@ export default function About() {
             onMouseLeave={deactivateHobbies}
           >
             {/* resume - hobbies heading */}
-            <ResumeHeading
-              activateCursor={isHobbiesActivated}
-              section={"hobbies"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isHobbiesActivated}
+                section={"hobbies"}
+              />
+
+              <span className="text-base -mt-4">😊</span>
+            </div>
 
             {/* resume - hobbies body */}
             <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
@@ -263,10 +287,14 @@ export default function About() {
             onMouseLeave={deactivateRef}
           >
             {/* resume - references heading */}
-            <ResumeHeading
-              activateCursor={isRefActivated}
-              section={"references"}
-            />
+            <div className="w-full flex justify-between items-center">
+              <ResumeHeading
+                activateCursor={isRefActivated}
+                section={"references"}
+              />
+
+              <span className="text-base -mt-4">⛓</span>
+            </div>
 
             {/* resume - references body */}
             <div className="flex flex-wrap items-center justify-start px-4 mb-5 sm:px-5">
