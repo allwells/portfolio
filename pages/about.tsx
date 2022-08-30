@@ -106,13 +106,13 @@ export default function About() {
             onMouseLeave={deactivateProfile}
           >
             {/* resume - profile heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isProfileActivated}
                 section={"profile"}
               />
 
-              <span className="text-base -mt-4">👤</span>
+              <span className="-mt-4 text-base">👤</span>
             </div>
 
             {/* resume - profile body */}
@@ -127,13 +127,13 @@ export default function About() {
                 className="text-xs leading-6 text-left cursor-default dark:text-neutral-200"
               >
                 A self-taught Software Developer from 🇳🇬Nigeria🇳🇬 with at least
-                2 years of experience with software technologies like Java,
-                React, Node, MySQL, etc. I possess exceptional problem-solving
-                skills and a self-motivated, dependable nature and able to
-                effectively self-manage during independent projects, as well as
-                collaborate as part of a productive team. I am goal-driven
-                individual and I focus on helping companies achieve short- and
-                long-term goals as well as client satisfaction.
+                2 years of experience with software technologies which includes
+                Java, React, Node, MySQL, etc. Possesses exceptional
+                problem-solving skills and a self-motivated, dependable nature
+                and able to effectively self-manage during independent projects,
+                as well as collaborate as part of a productive team. A
+                goal-driven individual that focuses on helping companies achieve
+                short- and long-term goals as well as client satisfaction.
               </p>
             </div>
           </SectionWrapper>
@@ -144,13 +144,13 @@ export default function About() {
             onMouseLeave={deactivateEdu}
           >
             {/* resume - education heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isEduActivated}
                 section={"education"}
               />
 
-              <span className="text-base -mt-4">📚</span>
+              <span className="-mt-4 text-base">📚</span>
             </div>
 
             {/* resume - education body */}
@@ -167,13 +167,13 @@ export default function About() {
             onMouseLeave={deactivateEmployment}
           >
             {/* resume - employment heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isEmploymentActivated}
                 section={"employment"}
               />
 
-              <span className="text-base -mt-4">👨🏾‍💻</span>
+              <span className="-mt-4 text-base">👨🏾‍💻</span>
             </div>
 
             {/* resume - employment body */}
@@ -216,13 +216,13 @@ export default function About() {
             onMouseLeave={deactivateCert}
           >
             {/* resume - certificate heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isCertActivated}
                 section={"certificates"}
               />
 
-              <span className="text-base -mt-4">🧾</span>
+              <span className="-mt-4 text-base">🧾</span>
             </div>
 
             {/* resume - certificate body */}
@@ -241,13 +241,13 @@ export default function About() {
             onMouseLeave={deactivateSkill}
           >
             {/* resume - skills heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isSkillActivated}
                 section={"skills"}
               />
 
-              <span className="text-base -mt-4">🛠</span>
+              <span className="-mt-4 text-base">🛠</span>
             </div>
 
             {/* resume - skills body */}
@@ -264,13 +264,13 @@ export default function About() {
             onMouseLeave={deactivateHobbies}
           >
             {/* resume - hobbies heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isHobbiesActivated}
                 section={"hobbies"}
               />
 
-              <span className="text-base -mt-4">😊</span>
+              <span className="-mt-4 text-base">😊</span>
             </div>
 
             {/* resume - hobbies body */}
@@ -287,13 +287,13 @@ export default function About() {
             onMouseLeave={deactivateRef}
           >
             {/* resume - references heading */}
-            <div className="w-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full">
               <ResumeHeading
                 activateCursor={isRefActivated}
                 section={"references"}
               />
 
-              <span className="text-base -mt-4">⛓</span>
+              <span className="-mt-4 text-base">⛓</span>
             </div>
 
             {/* resume - references body */}
