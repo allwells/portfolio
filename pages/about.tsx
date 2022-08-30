@@ -182,7 +182,7 @@ export default function About() {
                 start={"Apr 2022"}
                 location={"Port Harcourt, Rivers, Nigeria"}
                 organization={"Mesh Advertising & Design Studios"}
-                role={"Web Developer Intern"}
+                role={"Web Developer"}
               >
                 <DutiesList
                   duty={"Worked to remain punctual, reliable, and flexible."}
@@ -193,11 +193,11 @@ export default function About() {
                   }
                 />
                 <DutiesList
-                  duty={"Contributed to the design of the e-Voting platform."}
+                  duty={"Contributed to the UI design process of the company's software."}
                 />
                 <DutiesList
                   duty={
-                    "Single-handedly built an e-Voting platform which is an extension of the company's yet-to-be-released software, Voices."
+                    "Collaborated with the Lead Developer to build to come up with logics for the company's software and also build the software."
                   }
                 />
                 <DutiesList
