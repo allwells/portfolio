@@ -51,7 +51,7 @@ a {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-image: url("../public/profile.png") !important;
+  background-image: url("https://res.cloudinary.com/allwells/image/upload/v1662116854/Portfolio/profile_x62lt4.png") !important;
 }
 
 #layout-bg {
@@ -59,7 +59,7 @@ a {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-  background-image: url("../public/pattern.jpg") !important;
+  background-image: url("https://res.cloudinary.com/allwells/image/upload/v1662116888/Portfolio/pattern_x9hqpf.jpg") !important;
 }
 
 /* Random Images */
