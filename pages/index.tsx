@@ -15,7 +15,7 @@ export default function Home() {
                 This is Allwell Onen
               </h1>
               <p className="text-xs font-light tracking-wider sm:text-base dark:text-neutral-300">
-                A self-taught Software Developer from 🇳🇬Nigeria🇳🇬 who is
+                A dedicated Frontend Developer from 🇳🇬Nigeria🇳🇬 who is
                 goal-driven and focuses on helping companies achieve short- and
                 long-term goals as well as client satisfaction.
               </p>

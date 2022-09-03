@@ -126,14 +126,23 @@ export default function About() {
                 }}
                 className="text-xs leading-6 text-left cursor-default dark:text-neutral-200"
               >
-                A self-taught Software Developer from 🇳🇬Nigeria🇳🇬 with at least
+                A dedicated Frontend Developer from 🇳🇬Nigeria🇳🇬 with at least 3
+                years of experience with frontend technologies, including HTML,
+                CSS, React, Next.js, Tailwindcss, APIs and more. Possesses
+                exceptional problem-solving skills and a self-motivated,
+                dependable nature and can effectively self-manage during
+                independent projects and collaborate as part of a productive
+                team. A goal-driven individual that focuses on helping companies
+                achieve short- and long-term goals, client satisfaction, and
+                event success.
+                {/* A self-taught Software Developer from 🇳🇬Nigeria🇳🇬 with at least
                 2 years of experience with software technologies which includes
                 Java, React, Node, MySQL, etc. Possesses exceptional
                 problem-solving skills and a self-motivated, dependable nature
                 and able to effectively self-manage during independent projects,
                 as well as collaborate as part of a productive team. A
                 goal-driven individual that focuses on helping companies achieve
-                short- and long-term goals as well as client satisfaction.
+                short- and long-term goals as well as client satisfaction. */}
               </p>
             </div>
           </SectionWrapper>
@@ -193,7 +202,9 @@ export default function About() {
                   }
                 />
                 <DutiesList
-                  duty={"Contributed to the UI design process of the company's software."}
+                  duty={
+                    "Contributed to the UI design process of the company's software."
+                  }
                 />
                 <DutiesList
                   duty={
