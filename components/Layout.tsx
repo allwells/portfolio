@@ -22,12 +22,12 @@ export default function Layout({
   return (
     <div dir="ltr" id="layout-bg" className="w-full min-h-screen dark">
       <Head>
-        <title>Allwell Onen - {title}</title>
+        <title>{"Allwell Onen | " + { title }}</title>
         <meta
           name="description"
           content="Software Developer with over 2 years of experience in the field."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/favicon.ico" />
       </Head>
 
       <div className="flex flex-col items-center justify-center w-full min-h-screen bg-amber-50/80 dark:bg-neutral-900/80">

@@ -50,15 +50,6 @@ const works = [
     description:
       "e-Voting, an extension of an already existing platform, Vo!ces, is a online voting platform built with Laravel and Tailwindcss to work with Voices.",
   },
-  {
-    id: 6,
-    tag: "electron",
-    url: "https://github.com/allwells/txt-ed",
-    image: txtEdAppImage,
-    title: "Txt-Ed",
-    description:
-      "Txt-Ed is a simple desktop-based text editor application built with Electron.",
-  },
 ];
 
 export default function Works() {
