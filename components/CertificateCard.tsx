@@ -1,6 +1,6 @@
 import React from "react";
 
-type CertificateCardProps = {
+type Props = {
   title: string;
   organization: string;
   organizationLink: string;
@@ -10,7 +10,7 @@ type CertificateCardProps = {
   credentialLink?: string;
 };
 
-function CertificateCard(props: CertificateCardProps) {
+function CertificateCard(props: Props) {
   return (
     <div className="flex flex-col items-start justify-between flex-grow flex-shrink gap-5 p-3 text-xs transition duration-200 border cursor-default dark:hover:bg-white/10 dark:border-neutral-700 backdrop-blur dark:bg-neutral-100/5 dark:text-neutral-300">
       <div>
@@ -59,15 +59,15 @@ function CertificateCard(props: CertificateCardProps) {
           </span>
           ]
         </a>
-      ) : (
-        <button type="button" className="text-sm dark:text-blue-600">
-          [
-          <span className="text-xs dark:text-neutral-200 md:dark:text-neutral-400 md:dark:hover:text-neutral-100">
-            See Credential
-          </span>
-          ]
-        </button>
-      )}
+      ) : null
+      // <button type="button" className="text-sm dark:text-blue-600">
+      //   [
+      //   <span className="text-xs dark:text-neutral-200 md:dark:text-neutral-400 md:dark:hover:text-neutral-100">
+      //     See Credential
+      //   </span>
+      //   ]
+      // </button>
+      }
     </div>
   );
 }

@@ -50,7 +50,7 @@ a {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-image: url("https://res.cloudinary.com/allwells/image/upload/v1662116854/Portfolio/profile_x62lt4.png") !important;
+  background-image: url("../public/assets/profile.png") !important;
 }
 
 #layout-bg {
@@ -58,7 +58,42 @@ a {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-  background-image: url("https://res.cloudinary.com/allwells/image/upload/v1662116888/Portfolio/pattern_x9hqpf.jpg") !important;
+  background-image: url("../public/assets/pattern.jpg") !important;
+}
+
+#work-card .portfolio-image {
+  transition-delay: 0.7s;
+  transition-duration: 0.5s !important;
+}
+
+#work-card:hover .portfolio-image {
+  transition-delay: 0.1s;
+  transform: scale(1.2) !important;
+  transition-duration: 0.5s !important;
+}
+
+#work-card .black-bg {
+  transition-delay: 0.7s;
+}
+
+#work-card:hover .black-bg {
+  transition-delay: 0.1s;
+}
+
+#work-card .description {
+  opacity: 0;
+  visibility: hidden;
+  height: 0 !important;
+  transition-delay: 0.5s;
+  transition-duration: 0.7s;
+}
+
+#work-card:hover .description {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+  height: 100% !important;
+  transition-duration: 0.7s;
 }
 
 /* Random Images */

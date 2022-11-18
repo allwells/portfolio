@@ -1,6 +1,7 @@
 import * as resource from "./api/resources";
 
 import Layout from "../components/Layout";
+import PageHeading from "../components/PageHeading";
 import React from "react";
 
 interface ContactLinkProps {
@@ -18,18 +19,9 @@ export default function Contact() {
 
   return (
     <Layout title={"Contact"} contact={"active"}>
-      <div className="px-2 pt-20 pb-12 sm:px-8 sm:pt-28 dark:text-neutral-200">
+      <div className="w-full px-2 pt-20 pb-12 sm:px-8 dark:text-neutral-200">
         {/* Page heading */}
-        <div className="flex items-center justify-start w-full mb-4">
-          <h1 className="text-base font-extrabold cursor-default md:text-xl dark:text-lime-500">
-            <span className="dark:text-blue-600">$</span> contact{" "}
-            <span className="text-md dark:text-red-500">
-              allwell{" "}
-              <span className="font-normal dark:text-emerald-500">--onen</span>
-            </span>
-            <span className="text-white animate-ping">_</span>
-          </h1>
-        </div>
+        <PageHeading pageHeading="contact" />
 
         {/* page body */}
         <div className="flex flex-col items-center justify-center w-full gap-4 px-0 mt-4 sm:px-8">

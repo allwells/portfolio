@@ -1,15 +1,26 @@
 import Layout from "../components/Layout";
+import PageHeading from "../components/PageHeading";
+import WorkCard from "../components/WorkCard";
 import eVotingAppImage from "../public/assets/eVotingApp.png";
 import myPortfolioAppImage from "../public/assets/myPortfolio.png";
 import portfolioAppImage from "../public/assets/uniquePortfolioApp.png";
 import renicAppImage from "../public/assets/renicApp.png";
 import txtEdAppImage from "../public/assets/textEditorApp.png";
 
+enum Colors {
+  TYPESCRIPT = "#3078c7",
+  JAVA = "#f0921d",
+  JAVASCRIPT = "#eed91d",
+  LARAVEL = "#f62a1c",
+}
+
 const works = [
   {
     id: 1,
-    tag: "typescript",
-    url: "https://allwells.vercel.app",
+    language: "typescript",
+    color: Colors.TYPESCRIPT,
+    live: "https://allwells.vercel.app",
+    github: "",
     image: myPortfolioAppImage,
     title: "My portfolio",
     description:
@@ -17,8 +28,9 @@ const works = [
   },
   {
     id: 2,
-    tag: "java",
-    url: "https://github.com/allwells/hospital-management-system",
+    language: "java",
+    color: Colors.JAVA,
+    github: "https://github.com/allwells/hospital-management-system",
     image: "",
     title: "Hospital Management System",
     description:
@@ -26,8 +38,9 @@ const works = [
   },
   {
     id: 3,
-    tag: "typescript",
-    url: "https://renic.vercel.app",
+    language: "typescript",
+    color: Colors.TYPESCRIPT,
+    live: "https://renic.vercel.app",
     image: renicAppImage,
     title: "Renic Branding",
     description:
@@ -35,18 +48,21 @@ const works = [
   },
   {
     id: 4,
-    tag: "javascript",
-    url: "https://unique.vercel.app",
+    language: "javascript",
+    color: Colors.JAVASCRIPT,
+    live: "https://unique.vercel.app",
     image: portfolioAppImage,
     title: "Portfolio App",
     description: "This is a portfolio app built with Reactjs.",
   },
   {
     id: 5,
-    tag: "laravel",
-    url: "https://github.com/allwells/e-voting",
+    language: "laravel",
+    color: Colors.LARAVEL,
+    live: "https://evoting.i-amvocal.org",
+    github: "https://github.com/allwells/e-voting",
     image: eVotingAppImage,
-    title: "e-Voting",
+    title: "e-Voting Platform",
     description:
       "e-Voting, an extension of an already existing platform, Vo!ces, is a online voting platform built with Laravel and Tailwindcss to work with Voices.",
   },
@@ -55,22 +71,30 @@ const works = [
 export default function Works() {
   return (
     <Layout title={"Works"} works={"active"}>
-      <div className="flex flex-col items-center justify-center w-full px-5 pt-16 pb-6 text-center sm:px-16 sm:pt-20 dark:text-neutral-200">
+      <div className="flex flex-col items-center justify-center w-full px-5 pt-16 pb-6 text-center sm:px-8 sm:pt-20 dark:text-neutral-200">
         {/* Page heading */}
-        <div className="flex items-center justify-start w-full mb-4">
-          <h1 className="text-base font-extrabold cursor-default md:text-xl dark:text-lime-500">
-            <span className="dark:text-blue-600">$</span> works{" "}
-            <span className="text-md dark:text-red-500">
-              allwell{" "}
-              <span className="font-normal dark:text-emerald-500">--onen</span>
-            </span>
-            <span className="text-white animate-ping">_</span>
-          </h1>
+        <PageHeading pageHeading="works" />
+
+        <div className="grid w-full grid-cols-1 gap-5 mt-5 sm:grid-cols-2 md:grid-cols-3">
+          {works.map((data: any) => {
+            return (
+              <WorkCard
+                key={data.id}
+                language={data.language}
+                color={data.color}
+                live={data.live}
+                github={data.github}
+                image={data.image}
+                title={data.title}
+                description={data.description}
+              />
+            );
+          })}
         </div>
 
-        <div className="flex items-center justify-center w-full h-[80vh] text-sm md:text-xl text-neutral-400 border border-dashed border-neutral-700">
+        {/* <div className="flex items-center justify-center w-full h-[80vh] text-sm md:text-xl text-neutral-400 border border-dashed border-neutral-700">
           <span className="animate-pulse">Coming soon...</span>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

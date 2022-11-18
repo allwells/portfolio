@@ -1,45 +1,36 @@
-interface ResumeHeadingProps {
+export type ResumeHeadingProps = {
   section: string;
   activateCursor: boolean;
-}
+};
 
-interface SectionWrapperProps {
+export type SectionWrapperProps = {
   children: React.ReactNode;
   onMouseEnter: Function;
   onMouseLeave: Function;
-}
+};
 
-interface DetailsCardProps {
+export type DetailsCardProps = {
   end?: string;
   role: string;
   start: string;
   location: string;
   organization: string;
-}
+};
 
-interface DutiesProps {
+export type DutiesProps = {
   duty: string;
-}
+};
 
-interface EmploymentDutiesProps {
+export type EmploymentDutiesProps = {
   end?: string;
   role: string;
   start: string;
   location: string;
   organization: string;
   children: React.ReactNode;
-}
+};
 
-interface ResumeBadgeProps {
+export type ResumeBadgeProps = {
   value: string;
   theme: string;
-}
-
-export type {
-  DutiesProps,
-  DetailsCardProps,
-  ResumeBadgeProps,
-  ResumeHeadingProps,
-  SectionWrapperProps,
-  EmploymentDutiesProps,
 };

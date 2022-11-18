@@ -11,6 +11,7 @@ import {
 
 import CertificateCard from "../components/CertificateCard";
 import Layout from "../components/Layout";
+import PageHeading from "../components/PageHeading";
 import React from "react";
 
 export default function About() {
@@ -89,14 +90,7 @@ export default function About() {
     <Layout title={"About"} about={"active"}>
       <div className="w-full px-2 pt-20 pb-12 sm:px-8 dark:text-neutral-200">
         {/* Page heading */}
-        <h1 className="mb-4 text-base font-extrabold cursor-default md:text-xl dark:text-lime-500">
-          <span className="dark:text-blue-600">$</span> about{" "}
-          <span className="text-md dark:text-red-500">
-            allwell{" "}
-            <span className="font-normal dark:text-emerald-500">--onen</span>
-          </span>
-          <span className="text-white animate-ping">_</span>
-        </h1>
+        <PageHeading pageHeading="about" />
 
         {/* page body */}
         <div className="w-full md:px-6">

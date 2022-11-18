@@ -1,15 +1,15 @@
+import Footer from "./Footer";
 import Head from "next/head";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 
-interface LayoutProps {
+type Props = {
   title: string;
   home?: string;
   works?: string;
   about?: string;
   contact?: string;
   children: React.ReactNode;
-}
+};
 
 export default function Layout({
   children,
@@ -18,11 +18,11 @@ export default function Layout({
   works,
   about,
   contact,
-}: LayoutProps) {
+}: Props) {
   return (
     <div dir="ltr" id="layout-bg" className="w-full min-h-screen dark">
       <Head>
-        <title>{"Allwell Onen | " + { title }}</title>
+        <title>{"Allwell Onen | " + title}</title>
         <meta
           name="description"
           content="Software Developer with over 2 years of experience in the field."
